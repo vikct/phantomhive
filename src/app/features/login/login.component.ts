@@ -9,12 +9,12 @@ import {
 import { Router } from '@angular/router';
 import { AuthService } from '../../core/auth/auth.service';
 
-import { GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
+import { SingleSignOnModule } from '../../core/modules/single-sign-on/single-sign-on.module';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, GoogleSigninButtonModule],
+  imports: [CommonModule, ReactiveFormsModule, SingleSignOnModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
