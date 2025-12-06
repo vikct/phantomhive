@@ -7,14 +7,23 @@ import {
   Validators,
 } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from '../../core/auth/auth.service';
+import { AuthService } from '@core/auth/auth.service';
 
-import { SingleSignOnModule } from '../../core/modules/single-sign-on/single-sign-on.module';
+import { SingleSignOnModule } from '@core/modules/single-sign-on/single-sign-on.module';
+
+import { TranslateModule } from '@ngx-translate/core';
+import { LanguageSwitcherComponent } from '@shared/components/language-switcher/language-switcher.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, SingleSignOnModule],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    SingleSignOnModule,
+    TranslateModule,
+    LanguageSwitcherComponent,
+  ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
