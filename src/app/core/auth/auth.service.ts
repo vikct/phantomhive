@@ -26,8 +26,9 @@ export class AuthService {
     this.socialAuthService.authState.subscribe((user: SocialUser) => {
       console.log('User logged in via Google:', user);
       if (user) {
-        this.currentUser.set(user.name);
-        localStorage.setItem('currentUser', user.name);
+        const name = user.name || '';
+        this.currentUser.set(name);
+        localStorage.setItem('currentUser', name);
         this.router.navigate(['/']);
       }
     });

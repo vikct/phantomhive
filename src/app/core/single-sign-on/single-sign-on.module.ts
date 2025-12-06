@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
-  SocialLoginModule,
   SocialAuthServiceConfig,
   GoogleLoginProvider,
   GoogleSigninButtonModule,
+  SOCIAL_AUTH_CONFIG,
 } from '@abacritt/angularx-social-login';
 import { GoogleSsoButtonComponent } from './components/google-sso-button.component';
 import { environment } from '@env/environment';
@@ -15,7 +15,7 @@ import { environment } from '@env/environment';
   exports: [GoogleSsoButtonComponent],
   providers: [
     {
-      provide: 'SocialAuthServiceConfig',
+      provide: SOCIAL_AUTH_CONFIG,
       useValue: {
         autoLogin: false,
         providers: [
