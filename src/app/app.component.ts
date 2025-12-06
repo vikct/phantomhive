@@ -6,7 +6,7 @@ import { CoreService } from '@core/core.service';
   selector: 'app-root',
   imports: [RouterOutlet],
   template: `<router-outlet></router-outlet>`,
-  styleUrl: './app.component.scss',
+  styles: ``,
 })
 export class AppComponent {
   title = 'phantomhive';
