@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { CoreService } from '@core/core.service';
 import { AppLayoutComponent } from '@core/layout/layout.component';
 
+import { TuiRoot } from '@taiga-ui/core';
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, AppLayoutComponent],
