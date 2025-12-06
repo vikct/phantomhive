@@ -13,12 +13,12 @@ import { Component } from '@angular/core';
   standalone: false,
   styles: [
     `
-      .google-btn-wrapper {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 1rem;
-      }
+      // .google-btn-wrapper {
+      //   display: flex;
+      //   justify-content: center;
+      //   width: 100%;
+      //   margin-top: 1rem;
+      // }
     `,
   ],
 })
