@@ -7,12 +7,11 @@ import {
   Validators,
 } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from '@core/auth/auth.service';
-
-import { SingleSignOnModule } from '@core/modules/single-sign-on/single-sign-on.module';
-
 import { TranslateModule } from '@ngx-translate/core';
-import { LanguageSwitcherComponent } from '@shared/components/language-switcher/language-switcher.component';
+
+import { AuthService } from '@core/auth/auth.service';
+import { SingleSignOnModule } from '@core/single-sign-on/single-sign-on.module';
+import { LanguageSwitcherComponent } from '@core/i18n/language-switcher.component';
 
 @Component({
   selector: 'app-login',
