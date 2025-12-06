@@ -1,0 +1,9 @@
+{
+  "LOGIN": {
+    "WELCOME_BACK": "お帰りなさい",
+    "USERNAME": "ユーザー名",
+    "PASSWORD": "パスワード",
+    "LOGIN_BUTTON": "ログイン",
+    "OR": "または"
+  }
+}

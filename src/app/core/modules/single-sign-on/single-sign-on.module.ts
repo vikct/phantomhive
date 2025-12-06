@@ -7,7 +7,7 @@ import {
   GoogleSigninButtonModule,
 } from '@abacritt/angularx-social-login';
 import { GoogleSsoButtonComponent } from './components/google-sso-button.component';
-import { environment } from '../../../../environments/environment';
+import { environment } from '@env/environment';
 
 @NgModule({
   declarations: [GoogleSsoButtonComponent],
