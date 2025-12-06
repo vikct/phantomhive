@@ -1,43 +1,52 @@
 <div class="login-container">
-  <h2>Welcome Back</h2>
-
-  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    @if (error) {
-    <div class="error-message">
-      {{ error }}
+  <div class="login-card">
+    <div class="card-header">
+      <app-language-switcher></app-language-switcher>
     </div>
-    }
-
-    <div class="form-group">
-      <label for="username">Username</label>
-      <input
-        type="text"
-        id="username"
-        formControlName="username"
-        placeholder="Enter your username"
-        autocomplete="username"
-      />
-    </div>
-
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input
-        type="password"
-        id="password"
-        formControlName="password"
-        placeholder="Enter your password"
-        autocomplete="current-password"
-      />
-    </div>
-
-    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+    <h2>{{ "LOGIN.WELCOME_BACK" | translate }}</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">{{ "LOGIN.USERNAME" | translate }}</label>
+        <input id="username" type="text" formControlName="username" required />
+        <div
+          *ngIf="
+            loginForm.get('username')?.invalid &&
+            loginForm.get('username')?.touched
+          "
+          class="error"
+        >
+          {{ "LOGIN.USERNAME" | translate }} is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">{{ "LOGIN.PASSWORD" | translate }}</label>
+        <input
+          id="password"
+          type="password"
+          formControlName="password"
+          required
+        />
+        <div
+          *ngIf="
+            loginForm.get('password')?.invalid &&
+            loginForm.get('password')?.touched
+          "
+          class="error"
+        >
+          {{ "LOGIN.PASSWORD" | translate }} is required
+        </div>
+      </div>
+      <div *ngIf="error" class="error-message">{{ error }}</div>
+      <button type="submit" [disabled]="loginForm.invalid">
+        {{ "LOGIN.LOGIN_BUTTON" | translate }}
+      </button>
+    </form>
 
     <div class="separator">
-      <span>OR</span>
+      <span>{{ "LOGIN.OR" | translate }}</span>
     </div>
 
-    <div class="google-btn-wrapper">
-      <app-google-sso-button></app-google-sso-button>
-    </div>
-  </form>
+    <!-- Google SSO Button Wrapper -->
+    <app-google-sso-button></app-google-sso-button>
+  </div>
 </div>

@@ -1,0 +1,9 @@
+{
+  "LOGIN": {
+    "WELCOME_BACK": "Welcome Back",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "LOGIN_BUTTON": "Login",
+    "OR": "OR"
+  }
+}
