@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-
 import { TuiRoot } from '@taiga-ui/core';
 import { AuthService } from '@core/auth/auth.service';
 import { HeaderComponent } from './components/header/header.component';

@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-
 import { TuiButton } from '@taiga-ui/core';
 import { LanguageSwitcherComponent } from '@core/i18n/language-switcher.component';
 import { AuthService } from '@core/auth/auth.service';
