@@ -9,6 +9,7 @@ import { AppTranslationService } from '@core/i18n/app-translation.service';
   template: `
     <div class="language-switcher">
       <button
+        type="button"
         [class.active]="currentLang === 'en'"
         (click)="switchLanguage('en')"
       >
@@ -16,6 +17,7 @@ import { AppTranslationService } from '@core/i18n/app-translation.service';
       </button>
       <span class="divider">|</span>
       <button
+        type="button"
         [class.active]="currentLang === 'zh'"
         (click)="switchLanguage('zh')"
       >
@@ -23,6 +25,7 @@ import { AppTranslationService } from '@core/i18n/app-translation.service';
       </button>
       <span class="divider">|</span>
       <button
+        type="button"
         [class.active]="currentLang === 'ja'"
         (click)="switchLanguage('ja')"
       >
