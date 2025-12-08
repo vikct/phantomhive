@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { AuthService } from '@core/auth/auth.service';
-import { SingleSignOnModule } from '@core/single-sign-on/single-sign-on.module';
+import { SingleSignOnModule } from '@core/auth/single-sign-on/single-sign-on.module';
 import { LanguageSwitcherComponent } from '@core/i18n/language-switcher.component';
 
 @Component({

@@ -1,14 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CoreService } from '@core/core.service';
-
-import { TuiRoot } from '@taiga-ui/core';
+import { AppLayoutComponent } from '@core/layout/layout.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TuiRoot],
-  template: `<tui-root><router-outlet></router-outlet></tui-root>`,
-  styles: ``,
+  imports: [RouterOutlet, AppLayoutComponent],
+  template: `<app-layout><router-outlet></router-outlet></app-layout>`,
 })
 export class AppComponent {
   title = 'phantomhive';

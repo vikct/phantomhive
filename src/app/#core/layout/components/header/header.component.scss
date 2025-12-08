@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--tui-background-base-alt);
+  border-bottom: 1px solid var(--tui-border-normal);
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 1.5rem;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--tui-text-primary);
+}
+
+.actions-area {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
