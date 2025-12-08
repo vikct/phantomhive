@@ -13,6 +13,17 @@ import { AuthService } from '@core/auth/auth.service';
 import { SingleSignOnModule } from '@core/auth/single-sign-on/single-sign-on.module';
 import { LanguageSwitcherComponent } from '@core/i18n/language-switcher.component';
 
+import {
+  TuiAppearance,
+  TuiButton,
+  TuiError,
+  TuiNotification,
+  TuiTextfield,
+  TuiTitle,
+} from '@taiga-ui/core';
+import { TuiFieldErrorPipe } from '@taiga-ui/kit';
+import { TuiCardLarge, TuiForm, TuiHeader } from '@taiga-ui/layout';
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -22,6 +33,20 @@ import { LanguageSwitcherComponent } from '@core/i18n/language-switcher.componen
     SingleSignOnModule,
     TranslateModule,
     LanguageSwitcherComponent,
+
+    // Taiga UI
+    TuiAppearance,
+    TuiButton,
+    TuiError,
+    TuiNotification,
+    TuiTextfield,
+    TuiTitle,
+
+    TuiCardLarge,
+    TuiForm,
+    TuiHeader,
+
+    TuiFieldErrorPipe,
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
