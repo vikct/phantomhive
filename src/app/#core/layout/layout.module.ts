@@ -7,4 +7,4 @@ import { NG_EVENT_PLUGINS } from '@taiga-ui/event-plugins';
   providers: [NG_EVENT_PLUGINS],
   exports: [TuiRoot],
 })
-export class ThemeModule {}
+export class LayoutModule {}
