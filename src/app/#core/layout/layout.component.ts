@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { TuiRoot } from '@taiga-ui/core';
 import { AuthService } from '@core/auth/auth.service';
 import { HeaderComponent } from './components/header/header.component';
@@ -10,12 +10,11 @@ import { FooterComponent } from './components/footer/footer.component';
   selector: 'app-layout',
   standalone: true,
   imports: [
-    CommonModule,
     TuiRoot,
     HeaderComponent,
     SidebarComponent,
-    FooterComponent,
-  ],
+    FooterComponent
+],
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss'],
 })

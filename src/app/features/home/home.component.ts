@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { AuthService } from '@core/auth/auth.service';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   template: `
     <div class="home-container">
       <h1>Welcome, {{ authService.currentUser() }}!</h1>
