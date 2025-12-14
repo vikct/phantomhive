@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { AppTranslationService } from '@core/i18n/app-translation.service';
 
 @Component({
   selector: 'app-language-switcher',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   template: `
     <div class="language-switcher">
       <button
