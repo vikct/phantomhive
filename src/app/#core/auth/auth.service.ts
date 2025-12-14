@@ -1,6 +1,6 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, signal, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { SocialAuthService, SocialUser } from '@abacritt/angularx-social-login';
+import { SsoService } from './single-sign-on/sso.service';
 
 @Injectable({
   providedIn: 'root',
@@ -12,25 +12,29 @@ export class AuthService {
 
   currentUser = signal<string | null>(null);
 
-  constructor(
-    private router: Router,
-    private socialAuthService: SocialAuthService
-  ) {
+  private ssoService = inject(SsoService);
+  private router = inject(Router);
+
+  constructor() {
     // Check localStorage for session persistence
     const storedUser = localStorage.getItem('currentUser');
     if (storedUser) {
       this.currentUser.set(storedUser);
     }
 
-    // Subscribe to social auth state
-    this.socialAuthService.authState.subscribe((user: SocialUser) => {
-      console.log('User logged in via Google:', user);
-      if (user) {
-        const name = user.name || '';
+    // Subscribe to SSO auth state (aggregated)
+    this.ssoService.user$.subscribe((name) => {
+      console.log('SSO auth state changed:', name);
+      if (name) {
         this.currentUser.set(name);
         localStorage.setItem('currentUser', name);
-        this.router.navigate(['/']);
+
+        if (this.router.url.includes('login')) {
+          this.router.navigate(['/']);
+        }
       }
+      // Note: We don't auto-clear on null to preserve the mock user session if it exists,
+      // matching previous mixed-auth logic.
     });
   }
 
@@ -45,10 +49,8 @@ export class AuthService {
   }
 
   logout(): void {
-    // Attempt to sign out specific to social auth if needed, but for now generic cleanup
-    this.socialAuthService
-      .signOut()
-      .catch((err) => console.log('Social signout not needed or failed', err));
+    // Attempt sign out from SSO provider(s)
+    this.ssoService.logout().catch(() => {});
 
     this.currentUser.set(null);
     localStorage.removeItem('currentUser');

@@ -10,12 +10,9 @@ import { SingleSignOnModule } from './auth/single-sign-on/single-sign-on.module'
 
 import { LayoutModule } from './layout/layout.module';
 
-import { SocialLoginModule } from '@abacritt/angularx-social-login';
-
 @NgModule({
   imports: [
     SingleSignOnModule,
-    SocialLoginModule,
     LayoutModule,
     TranslateModule.forRoot({
       loader: {
