@@ -1,9 +1,13 @@
 {
   "LOGIN": {
-    "WELCOME_BACK": "Welcome Back",
+    "TITLE": "Welcome to the Phantomhive Manor",
+    "SUBTITLE": "Please login to continue",
     "USERNAME": "Username",
     "PASSWORD": "Password",
     "LOGIN_BUTTON": "Login",
-    "OR": "OR"
-  }
+    "OR": "OR",
+    "USERNAME_COMPULSORY": "Username cannot be empty",
+    "PASSWORD_COMPULSORY": "Password cannot be empty"
+  },
+  "ERROR": "Error"
 }
