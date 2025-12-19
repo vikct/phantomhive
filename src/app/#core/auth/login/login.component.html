@@ -2,15 +2,15 @@
   <form
     tuiAppearance="floating"
     tuiCardLarge
-    tuiForm="m"
+    tuiForm="l"
     [formGroup]="loginForm"
     (ngSubmit)="onSubmit()"
     [style.max-width.rem]="35"
-    >
+  >
     <header tuiHeader>
       <h2 tuiTitle>
-        {{ "LOGIN.WELCOME_BACK" | translate }}
-        <span tuiSubtitle>Please sign in to continue</span>
+        {{ "LOGIN.TITLE" | translate }}
+        <span tuiSubtitle>{{ "LOGIN.SUBTITLE" | translate }}</span>
       </h2>
       <span tuiAccessories>
         <app-language-switcher></app-language-switcher>
@@ -18,12 +18,12 @@
     </header>
 
     @if (error) {
-      <tui-notification appearance="negative">
-        <h3 tuiTitle>
-          Error
-          <span tuiSubtitle>{{ error }}</span>
-        </h3>
-      </tui-notification>
+    <tui-notification appearance="negative">
+      <h3 tuiTitle>
+        Error
+        <span tuiSubtitle>{{ error }}</span>
+      </h3>
+    </tui-notification>
     }
 
     <tui-textfield>

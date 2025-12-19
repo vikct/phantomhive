@@ -13,31 +13,26 @@ form[tuiCardLarge] {
   width: 100%;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem; /* Add some spacing from form content */
+}
+
+button[type="submit"] {
+  flex: 1; /* Login button takes available space */
+}
+
 .separator-wrapper {
-  margin: 1rem 0;
+  /* Reset wrapper */
+  margin: 0;
 }
 
 .separator {
-  display: flex;
-  align-items: center;
-  text-align: center;
+  /* Minimal text style */
+  font: var(--tui-font-text-s);
   color: var(--tui-text-tertiary);
-
-  &::before,
-  &::after {
-    content: "";
-    flex: 1;
-    border-bottom: 1px solid var(--tui-border-normal);
-  }
-
-  span {
-    padding: 0 10px;
-    font: var(--tui-font-text-s);
-  }
+  white-space: nowrap;
 }
-
-.sso-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
+/* Removed old .sso-wrapper since it's gone from HTML */

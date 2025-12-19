@@ -1,9 +1,12 @@
 {
   "LOGIN": {
-    "WELCOME_BACK": "欢迎回来",
+    "TITLE": "欢迎回来",
     "USERNAME": "用户名",
     "PASSWORD": "密码",
     "LOGIN_BUTTON": "登录",
-    "OR": "或"
-  }
+    "OR": "或",
+    "USERNAME_COMPULSORY": "用户名不能为空",
+    "PASSWORD_COMPULSORY": "密码不能为空"
+  },
+  "ERROR": "错误"
 }

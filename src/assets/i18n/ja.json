@@ -1,9 +1,13 @@
 {
   "LOGIN": {
-    "WELCOME_BACK": "お帰りなさい",
+    "TITLE": "お帰り、坊ちゃん",
+    "SUBTITLE": "もう少し待ってください",
     "USERNAME": "ユーザー名",
     "PASSWORD": "パスワード",
     "LOGIN_BUTTON": "ログイン",
-    "OR": "または"
-  }
+    "OR": "または",
+    "USERNAME_COMPULSORY": "ユーザー名は必須です",
+    "PASSWORD_COMPULSORY": "パスワードは必須です"
+  },
+  "ERROR": "エラー"
 }
