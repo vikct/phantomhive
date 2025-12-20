@@ -2,7 +2,7 @@
   <form
     tuiAppearance="floating"
     tuiCardLarge
-    tuiForm="l"
+    tuiForm="m"
     [formGroup]="loginForm"
     (ngSubmit)="onSubmit()"
     [style.max-width.rem]="35"
@@ -18,10 +18,17 @@
     </header>
 
     @if (error) {
-    <tui-notification appearance="negative">
+    <tui-notification appearance="negative" (close)="error = null">
       <h3 tuiTitle>
         Error
         <span tuiSubtitle>{{ error }}</span>
+      </h3>
+    </tui-notification>
+    } @if (ssoService.ssoError(); as ssoError) {
+    <tui-notification appearance="info" (close)="ssoService.ssoError.set(null)">
+      <h3 tuiTitle>
+        {{ "LOGIN.OR" | translate }}
+        <span tuiSubtitle>{{ ssoError | translate }}</span>
       </h3>
     </tui-notification>
     }
@@ -57,6 +64,7 @@
 
       <div class="sso-wrapper">
         <app-google-sso-button></app-google-sso-button>
+        <app-github-sso-button></app-github-sso-button>
       </div>
     </footer>
   </form>
