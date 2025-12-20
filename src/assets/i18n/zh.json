@@ -6,7 +6,8 @@
     "LOGIN_BUTTON": "登录",
     "OR": "或",
     "USERNAME_COMPULSORY": "用户名不能为空",
-    "PASSWORD_COMPULSORY": "密码不能为空"
+    "PASSWORD_COMPULSORY": "密码不能为空",
+    "LINK_INSTRUCTION": "该邮箱已有关联账号。请先使用 Google 或原账号登录，以完成 GitHub 账号关联。"
   },
   "ERROR": "错误"
 }

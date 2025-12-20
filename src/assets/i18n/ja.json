@@ -7,7 +7,8 @@
     "LOGIN_BUTTON": "ログイン",
     "OR": "または",
     "USERNAME_COMPULSORY": "ユーザー名は必須です",
-    "PASSWORD_COMPULSORY": "パスワードは必須です"
+    "PASSWORD_COMPULSORY": "パスワードは必須です",
+    "LINK_INSTRUCTION": "このメールアドレスのアカウントは既に存在します。GitHubを連携するには、Googleまたは既存のアカウントでログインしてください。"
   },
   "ERROR": "エラー"
 }

@@ -10,7 +10,9 @@ import { Router } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { AuthService } from '@core/auth/auth.service';
+import { SsoService } from '@core/auth/single-sign-on/sso.service';
 import { GoogleSsoButtonComponent } from '@core/auth/single-sign-on/google/google-sso-button.component';
+import { GithubSsoButtonComponent } from '@core/auth/single-sign-on/github/github-sso-button.component';
 import { LanguageSwitcherComponent } from '@core/i18n/language-switcher.component';
 
 import {
@@ -31,6 +33,7 @@ import { TuiCardLarge, TuiForm, TuiHeader } from '@taiga-ui/layout';
     CommonModule,
     ReactiveFormsModule,
     GoogleSsoButtonComponent,
+    GithubSsoButtonComponent,
     TranslateModule,
     LanguageSwitcherComponent,
 
@@ -58,6 +61,7 @@ export class LoginComponent {
   constructor(
     private fb: FormBuilder,
     private authService: AuthService,
+    public ssoService: SsoService,
     private router: Router
   ) {
     this.loginForm = this.fb.group({

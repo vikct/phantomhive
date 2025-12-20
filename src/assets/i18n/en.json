@@ -7,7 +7,8 @@
     "LOGIN_BUTTON": "Login",
     "OR": "OR",
     "USERNAME_COMPULSORY": "Username cannot be empty",
-    "PASSWORD_COMPULSORY": "Password cannot be empty"
+    "PASSWORD_COMPULSORY": "Password cannot be empty",
+    "LINK_INSTRUCTION": "An account already exists with this email. Please sign in with Google (or your regular account) to link GitHub."
   },
   "ERROR": "Error"
 }
