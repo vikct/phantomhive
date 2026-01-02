@@ -1,6 +1,6 @@
 import { Injectable, signal, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { SsoService } from './single-sign-on/sso.service';
+import { SingleSignOnService } from './single-sign-on/single-sign-on.service';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +12,7 @@ export class AuthService {
 
   currentUser = signal<string | null>(null);
 
-  private ssoService = inject(SsoService);
+  private ssoService = inject(SingleSignOnService);
   private router = inject(Router);
 
   constructor() {

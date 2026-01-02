@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { GithubSsoService } from './github-sso.service';
-import { SsoService } from '../sso.service';
+import { SingleSignOnService } from '../single-sign-on.service';
 import { TuiButton } from '@taiga-ui/core';
 
 @Component({
@@ -42,7 +42,7 @@ import { TuiButton } from '@taiga-ui/core';
 })
 export class GithubSsoButtonComponent {
   private githubSsoService = inject(GithubSsoService);
-  private ssoService = inject(SsoService);
+  private ssoService = inject(SingleSignOnService);
 
   async login() {
     this.ssoService.ssoError.set(null);

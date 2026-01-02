@@ -14,7 +14,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 @Injectable({
   providedIn: 'root',
 })
-export class SsoService {
+export class SingleSignOnService {
   private auth = inject(Auth);
   private google = inject(GoogleSsoService);
   private github = inject(GithubSsoService);
