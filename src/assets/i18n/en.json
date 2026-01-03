@@ -8,7 +8,8 @@
     "OR": "OR",
     "USERNAME_COMPULSORY": "Username cannot be empty",
     "PASSWORD_COMPULSORY": "Password cannot be empty",
-    "LINK_INSTRUCTION": "An account already exists with this email. Please sign in with Google (or your regular account) to link GitHub."
+    "LINK_INSTRUCTION": "An account already exists with this email. Please sign in with your regular provider first (e.g. Google) to link this new account.",
+    "LINK_REQUIRED_TITLE": "Action Required: Account Linking"
   },
   "ERROR": "Error"
 }

@@ -8,7 +8,8 @@
     "OR": "または",
     "USERNAME_COMPULSORY": "ユーザー名は必須です",
     "PASSWORD_COMPULSORY": "パスワードは必須です",
-    "LINK_INSTRUCTION": "このメールアドレスのアカウントは既に存在します。GitHubを連携するには、Googleまたは既存のアカウントでログインしてください。"
+    "LINK_INSTRUCTION": "このメールアドレスのアカウントは既に存在します。新しいアカウントを連携するには、まず既存のプロバイダー（Googleなど）でログインしてください。",
+    "LINK_REQUIRED_TITLE": "要対応：アカウントの連携"
   },
   "ERROR": "エラー"
 }
