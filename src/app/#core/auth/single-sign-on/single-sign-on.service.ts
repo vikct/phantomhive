@@ -1,6 +1,7 @@
 import { Injectable, inject, signal } from '@angular/core';
 import { GoogleSsoService } from './google/google-sso.service';
 import { GithubSsoService } from './github/github-sso.service';
+import { FacebookSsoService } from './facebook/facebook-sso.service';
 import { Observable, merge, distinctUntilChanged } from 'rxjs';
 import {
   Auth,
@@ -18,8 +19,10 @@ export class SingleSignOnService {
   private auth = inject(Auth);
   private google = inject(GoogleSsoService);
   private github = inject(GithubSsoService);
+  private facebook = inject(FacebookSsoService);
 
   readonly ssoError = signal<string | null>(null);
+  readonly linkingMode = signal<boolean>(false);
   private _pendingCredential: AuthCredential | null = null;
 
   constructor() {
@@ -37,11 +40,13 @@ export class SingleSignOnService {
 
   readonly user$: Observable<string | null> = merge(
     this.google.appUser$,
-    this.github.appUser$
+    this.github.appUser$,
+    this.facebook.appUser$
   ).pipe(distinctUntilChanged()) as Observable<string | null>;
 
   setPendingCredential(credential: AuthCredential): void {
     this._pendingCredential = credential;
+    this.linkingMode.set(true);
     console.log('SsoService: Pending credential set for linking.');
   }
 
@@ -55,6 +60,8 @@ export class SingleSignOnService {
     try {
       await linkWithCredential(user, this._pendingCredential);
       this._pendingCredential = null;
+      this.linkingMode.set(false);
+      this.ssoError.set(null);
       console.log('SsoService: Accounts linked successfully!');
     } catch (err) {
       console.error('SsoService: Failed to link accounts', err);
@@ -64,7 +71,12 @@ export class SingleSignOnService {
 
   async logout(): Promise<void> {
     // Logout from all providers
-    await Promise.all([this.google.logout(), this.github.logout()]);
+    await Promise.all([
+      this.google.logout(),
+      this.github.logout(),
+      this.facebook.logout(),
+    ]);
     this._pendingCredential = null;
+    this.linkingMode.set(false);
   }
 }

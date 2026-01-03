@@ -24,7 +24,18 @@
         <span tuiSubtitle>{{ error }}</span>
       </h3>
     </tui-notification>
-    } @if (ssoService.ssoError(); as ssoError) {
+    } @if (ssoService.linkingMode()) {
+    <tui-notification
+      appearance="warning"
+      (close)="ssoService.logout()"
+      class="tui-space_bottom-4"
+    >
+      <h3 tuiTitle>
+        {{ "LOGIN.LINK_REQUIRED_TITLE" | translate }}
+        <span tuiSubtitle>{{ ssoService.ssoError() | translate }}</span>
+      </h3>
+    </tui-notification>
+    } @else if (ssoService.ssoError(); as ssoError) {
     <tui-notification appearance="info" (close)="ssoService.ssoError.set(null)">
       <h3 tuiTitle>
         {{ "LOGIN.OR" | translate }}
@@ -62,7 +73,8 @@
         </div>
       </div>
 
-      <div class="sso-wrapper">
+      <div class="sso-wrapper" [class.linking-mode]="ssoService.linkingMode()">
+        <app-facebook-sso-button></app-facebook-sso-button>
         <app-google-sso-button></app-google-sso-button>
         <app-github-sso-button></app-github-sso-button>
       </div>

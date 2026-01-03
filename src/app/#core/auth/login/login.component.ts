@@ -11,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { AuthService } from '@core/auth/auth.service';
 import { SingleSignOnService } from '@core/auth/single-sign-on/single-sign-on.service';
+import  {FacebookSsoButtonComponent } from '@core/auth/single-sign-on/facebook/facebook-sso-button.component';
 import { GoogleSsoButtonComponent } from '@core/auth/single-sign-on/google/google-sso-button.component';
 import { GithubSsoButtonComponent } from '@core/auth/single-sign-on/github/github-sso-button.component';
 import { LanguageSwitcherComponent } from '@core/i18n/language-switcher.component';
@@ -34,6 +35,7 @@ import { TuiCardLarge, TuiForm, TuiHeader } from '@taiga-ui/layout';
     ReactiveFormsModule,
     GoogleSsoButtonComponent,
     GithubSsoButtonComponent,
+    FacebookSsoButtonComponent,
     TranslateModule,
     LanguageSwitcherComponent,
 
