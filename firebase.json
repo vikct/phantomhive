@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "../../dist/phantomhive/browser",
+    "public": "dist/phantomhive/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
