@@ -41,4 +41,25 @@ button[type="submit"] {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  padding: 0.25rem;
+  border-radius: var(--tui-radius-m);
+  transition: all 0.3s ease;
+
+  &.linking-mode {
+    background-color: var(--tui-support-04); /* Light warning background */
+    box-shadow: 0 0 0 2px var(--tui-support-04);
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--tui-support-04-rgb, 255, 230, 0), 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(var(--tui-support-04-rgb, 255, 230, 0), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--tui-support-04-rgb, 255, 230, 0), 0);
+  }
 }
