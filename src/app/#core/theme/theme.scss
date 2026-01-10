@@ -1,0 +1,46 @@
+/*
+ * Glassmorphism Theme Utilities
+ * Applied globally to all Taiga UI inputs
+ */
+
+:root {
+  /* Override Taiga UI Tokens Globally */
+  --tui-text-01: #ffffff;
+  --tui-text-02: rgba(255, 255, 255, 0.7);
+  --tui-base-01: rgba(255, 255, 255, 0.1);
+  --tui-base-02: rgba(255, 255, 255, 0.2);
+}
+
+/* Deep overrides for TuiTextfield internals */
+tui-textfield,
+tui-textfield .t-wrapper,
+tui-textfield .t-content {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(4px);
+  border-radius: var(--tui-radius-m);
+}
+
+tui-textfield {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+tui-textfield input {
+  color: #fff !important;
+  caret-color: #fff;
+  background: transparent !important;
+}
+
+tui-textfield label {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Fix autofill background */
+tui-textfield input:-webkit-autofill,
+tui-textfield input:-webkit-autofill:hover,
+tui-textfield input:-webkit-autofill:focus,
+tui-textfield input:-webkit-autofill:active {
+  -webkit-text-fill-color: #fff !important;
+  /* Use a box-shadow that matches the glass background to cover the yellow */
+  -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.1) inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}

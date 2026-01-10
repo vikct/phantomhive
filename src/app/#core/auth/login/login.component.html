@@ -1,85 +1,97 @@
 <div class="login-wrapper">
-  <form
-    tuiAppearance="floating"
+  <div
     tuiCardLarge
-    tuiForm="m"
-    [formGroup]="loginForm"
-    (ngSubmit)="onSubmit()"
-    [style.max-width.rem]="35"
+    tuiSurface="elevated"
+    class="login-card-surface"
+    data-mode="onDark"
   >
-    <header tuiHeader>
-      <h2 tuiTitle>
-        {{ "LOGIN.TITLE" | translate }}
-        <span tuiSubtitle>{{ "LOGIN.SUBTITLE" | translate }}</span>
-      </h2>
+    <form
+      tuiForm="m"
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit()"
+      class="login-form-content"
+    >
       <span tuiAccessories>
-        <app-theme-switcher class="tui-space_right-2"></app-theme-switcher>
+        <app-theme-switcher></app-theme-switcher>
         <app-language-switcher></app-language-switcher>
       </span>
-    </header>
 
-    @if (error) {
-    <tui-notification appearance="negative" (close)="error = null">
-      <h3 tuiTitle>
-        Error
-        <span tuiSubtitle>{{ error }}</span>
-      </h3>
-    </tui-notification>
-    } @if (ssoService.linkingMode()) {
-    <tui-notification
-      appearance="warning"
-      (close)="ssoService.logout()"
-      class="tui-space_bottom-4"
-    >
-      <h3 tuiTitle>
-        {{ "LOGIN.LINK_REQUIRED_TITLE" | translate }}
-        <span tuiSubtitle>{{ ssoService.ssoError() | translate }}</span>
-      </h3>
-    </tui-notification>
-    } @else if (ssoService.ssoError(); as ssoError) {
-    <tui-notification appearance="info" (close)="ssoService.ssoError.set(null)">
-      <h3 tuiTitle>
-        {{ "LOGIN.OR" | translate }}
-        <span tuiSubtitle>{{ ssoError | translate }}</span>
-      </h3>
-    </tui-notification>
-    }
+      <header tuiHeader>
+        <h2 tuiTitle>
+          {{ "LOGIN.TITLE" | translate }}
+          <span tuiSubtitle>{{ "LOGIN.SUBTITLE" | translate }}</span>
+        </h2>
+      </header>
 
-    <tui-textfield>
-      <label tuiLabel>{{ "LOGIN.USERNAME" | translate }}</label>
-      <input formControlName="username" tuiTextfield />
-    </tui-textfield>
-    <tui-error
-      formControlName="username"
-      [error]="[] | tuiFieldError | async"
-    ></tui-error>
+      @if (error) {
+      <tui-notification appearance="negative" (close)="error = null">
+        <h3 tuiTitle>
+          Error
+          <span tuiSubtitle>{{ error }}</span>
+        </h3>
+      </tui-notification>
+      } @if (ssoService.linkingMode()) {
+      <tui-notification
+        appearance="warning"
+        (close)="ssoService.logout()"
+        class="tui-space_bottom-4"
+      >
+        <h3 tuiTitle>
+          {{ "LOGIN.LINK_REQUIRED_TITLE" | translate }}
+          <span tuiSubtitle>{{ ssoService.ssoError() | translate }}</span>
+        </h3>
+      </tui-notification>
+      } @else if (ssoService.ssoError(); as ssoError) {
+      <tui-notification
+        appearance="info"
+        (close)="ssoService.ssoError.set(null)"
+      >
+        <h3 tuiTitle>
+          {{ "LOGIN.OR" | translate }}
+          <span tuiSubtitle>{{ ssoError | translate }}</span>
+        </h3>
+      </tui-notification>
+      }
 
-    <tui-textfield>
-      <label tuiLabel>{{ "LOGIN.PASSWORD" | translate }}</label>
-      <input formControlName="password" tuiTextfield type="password" />
-    </tui-textfield>
-    <tui-error
-      formControlName="password"
-      [error]="[] | tuiFieldError | async"
-    ></tui-error>
+      <tui-textfield>
+        <label tuiLabel>{{ "LOGIN.USERNAME" | translate }}</label>
+        <input formControlName="username" tuiTextfield />
+      </tui-textfield>
+      <tui-error
+        formControlName="username"
+        [error]="[] | tuiFieldError | async"
+      ></tui-error>
 
-    <footer>
-      <button tuiButton type="submit" [disabled]="loginForm.invalid">
-        {{ "LOGIN.LOGIN_BUTTON" | translate }}
-      </button>
+      <tui-textfield>
+        <label tuiLabel>{{ "LOGIN.PASSWORD" | translate }}</label>
+        <input formControlName="password" tuiTextfield type="password" />
+      </tui-textfield>
+      <tui-error
+        formControlName="password"
+        [error]="[] | tuiFieldError | async"
+      ></tui-error>
 
-      <div class="separator-wrapper">
-        <div class="separator">
-          <span>{{ "LOGIN.OR" | translate }}</span>
+      <footer>
+        <button tuiButton type="submit" [disabled]="loginForm.invalid">
+          {{ "LOGIN.LOGIN_BUTTON" | translate }}
+        </button>
+
+        <div class="separator-wrapper">
+          <div class="separator">
+            <span>{{ "LOGIN.OR" | translate }}</span>
+          </div>
         </div>
-      </div>
 
-      <div class="sso-wrapper" [class.linking-mode]="ssoService.linkingMode()">
-        <app-twitter-sso-button></app-twitter-sso-button>
-        <app-google-sso-button></app-google-sso-button>
-        <app-facebook-sso-button></app-facebook-sso-button>
-        <app-github-sso-button></app-github-sso-button>
-      </div>
-    </footer>
-  </form>
+        <div
+          class="sso-wrapper"
+          [class.linking-mode]="ssoService.linkingMode()"
+        >
+          <app-facebook-sso-button></app-facebook-sso-button>
+          <app-google-sso-button></app-google-sso-button>
+          <app-github-sso-button></app-github-sso-button>
+          <app-twitter-sso-button></app-twitter-sso-button>
+        </div>
+      </footer>
+    </form>
+  </div>
 </div>
