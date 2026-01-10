@@ -2,6 +2,7 @@ import { Injectable, inject, signal } from '@angular/core';
 import { GoogleSsoService } from './google/google-sso.service';
 import { GithubSsoService } from './github/github-sso.service';
 import { FacebookSsoService } from './facebook/facebook-sso.service';
+import { TwitterSsoService } from './twitter/twitter-sso.service';
 import { Observable, merge, distinctUntilChanged } from 'rxjs';
 import {
   Auth,
@@ -20,6 +21,7 @@ export class SingleSignOnService {
   private google = inject(GoogleSsoService);
   private github = inject(GithubSsoService);
   private facebook = inject(FacebookSsoService);
+  private twitter = inject(TwitterSsoService);
 
   readonly ssoError = signal<string | null>(null);
   readonly linkingMode = signal<boolean>(false);
@@ -41,7 +43,8 @@ export class SingleSignOnService {
   readonly user$: Observable<string | null> = merge(
     this.google.appUser$,
     this.github.appUser$,
-    this.facebook.appUser$
+    this.facebook.appUser$,
+    this.twitter.appUser$
   ).pipe(distinctUntilChanged()) as Observable<string | null>;
 
   setPendingCredential(credential: AuthCredential): void {
@@ -75,6 +78,7 @@ export class SingleSignOnService {
       this.google.logout(),
       this.github.logout(),
       this.facebook.logout(),
+      this.twitter.logout(),
     ]);
     this._pendingCredential = null;
     this.linkingMode.set(false);
