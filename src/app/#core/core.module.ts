@@ -5,10 +5,9 @@ import {
   provideTranslateHttpLoader,
 } from '@ngx-translate/http-loader';
 import { SingleSignOnModule } from './auth/single-sign-on/single-sign-on.module';
-
-// ... imports
-
 import { LayoutModule } from './layout/layout.module';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { NG_EVENT_PLUGINS } from '@taiga-ui/event-plugins';
 
 @NgModule({
   imports: [
@@ -22,7 +21,11 @@ import { LayoutModule } from './layout/layout.module';
       defaultLanguage: 'en',
     }),
   ],
-  providers: [provideTranslateHttpLoader()],
+  providers: [
+    provideTranslateHttpLoader(),
+    provideAnimations(),
+    NG_EVENT_PLUGINS,
+  ],
   exports: [SingleSignOnModule, TranslateModule, LayoutModule],
 })
 export class CoreModule {

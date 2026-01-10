@@ -1,4 +1,4 @@
-<tui-root>
+<tui-root [attr.tuiTheme]="darkMode() ? 'dark' : null">
   @if (authService.isAuthenticated()) {
   <div class="layout-container">
     <app-header class="header"></app-header>
