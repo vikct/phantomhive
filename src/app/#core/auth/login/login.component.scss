@@ -3,36 +3,110 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--tui-background-base); /* Or a specific color/image */
+  background-color: var(--tui-background-base);
   padding: 1rem;
   box-sizing: border-box;
 }
 
-/* Ensure the form takes full width up to max-width defined in HTML */
-form[tuiCardLarge] {
+/*
+ * Surface Card Layout (Image Background + Glass)
+ * The card has the image, and a pseudo-element provides the glass overlay.
+ */
+.login-card-surface {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30rem;
   width: 100%;
+  border-radius: var(--tui-radius-l);
+  overflow: hidden; /* Clip the pseudo-element */
+
+  /* The Background Image (On Parent) */
+  background-image: url("/XIII.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem;
+  color: #fff;
+  z-index: 0; /* Establish stacking context */
+  isolation: auto; /* Revert isolation, rely on z-index stacking */
+
+  overflow: hidden; /* This should clip the background and the overlay */
+  border-radius: var(--tui-radius-l);
+
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  /* Fix border leakage on some browsers */
+  background-clip: padding-box;
+  transform: translateZ(0); /* Force GPU layer for clipping */
 }
+
+/* 
+ * The Dark Glass Overlay 
+ * Sits at z-index: -1, which is ABOVE the parent background 
+ * but BELOW the parent content in this Stacking Context.
+ */
+.login-card-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); /* Very light dark tint */
+  backdrop-filter: blur(8px); /* Blur */
+  -webkit-backdrop-filter: blur(8px);
+  z-index: -1;
+}
+
+/* Position the accessories (Theme/Lang switcher) in the top-right corner */
+/* Position the accessories (Theme/Lang switcher) in the top-right corner of the FORM */
+span[tuiAccessories] {
+  display: flex;
+  justify-content: flex-end; /* Align to right */
+  width: 100%; /* Take full width to allow right alignment */
+  margin-bottom: -1rem; /* Pull title up slightly if needed, or just 0 */
+  z-index: 10;
+  position: relative; /* Back to relative flow */
+}
+
+.login-form-content {
+  position: relative; /* Establish positioning context */
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Text visibility adjustments */
+/* Force headers to white or specific color if needed, depending on theme */
+:host ::ng-deep header[tuiHeader] h2 {
+  color: #fff !important;
+}
+
+:host ::ng-deep header[tuiHeader] span[tuiSubtitle] {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Glassmorphism for inputs is now handled globally via .glass-inputs class */
 
 footer {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 1.5rem; /* Add some spacing from form content */
+  margin-top: 1.5rem;
 }
 
 button[type="submit"] {
-  flex: 1; /* Login button takes available space */
+  flex: 1;
 }
 
 .separator-wrapper {
-  /* Reset wrapper */
   margin: 0;
 }
 
 .separator {
-  /* Minimal text style */
   font: var(--tui-font-text-s);
-  color: var(--tui-text-tertiary);
+  color: rgba(255, 255, 255, 0.7); /* Lighter separator on dark overlay */
   white-space: nowrap;
 }
 
@@ -44,9 +118,10 @@ button[type="submit"] {
   padding: 0.25rem;
   border-radius: var(--tui-radius-m);
   transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1); /* Slight background for buttons */
 
   &.linking-mode {
-    background-color: var(--tui-support-04); /* Light warning background */
+    background-color: var(--tui-support-04);
     box-shadow: 0 0 0 2px var(--tui-support-04);
     animation: pulse 2s infinite;
   }
@@ -63,4 +138,3 @@ button[type="submit"] {
     box-shadow: 0 0 0 0 rgba(var(--tui-support-04-rgb, 255, 230, 0), 0);
   }
 }
-/* Removed old .sso-wrapper since it's gone from HTML */

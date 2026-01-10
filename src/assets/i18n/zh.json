@@ -1,6 +1,7 @@
 {
   "LOGIN": {
-    "TITLE": "欢迎回来",
+    "TITLE": "少爷，欢迎回来",
+    "SUBTITLE": "请登录以继续",
     "USERNAME": "用户名",
     "PASSWORD": "密码",
     "LOGIN_BUTTON": "登录",
