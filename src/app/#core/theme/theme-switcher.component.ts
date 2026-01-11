@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  input,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WA_LOCAL_STORAGE, WA_WINDOW } from '@ng-web-apis/common';
 import { TUI_DARK_MODE, TUI_DARK_MODE_KEY, TuiButton } from '@taiga-ui/core';
@@ -11,8 +16,8 @@ import { TUI_DARK_MODE, TUI_DARK_MODE_KEY, TuiButton } from '@taiga-ui/core';
     <button
       tuiIconButton
       type="button"
-      appearance="action"
-      size="m"
+      [appearance]="appearance()"
+      [size]="size()"
       [style.border-radius.%]="50"
       (click)="darkMode.set(!darkMode())"
       [title]="darkMode() ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
@@ -77,6 +82,9 @@ export class ThemeSwitcherComponent {
   private readonly media = inject(WA_WINDOW).matchMedia(
     '(prefers-color-scheme: dark)'
   );
+
+  readonly appearance = input('action');
+  readonly size = input<'s' | 'm' | 'l'>('m');
 
   protected readonly darkMode = inject(TUI_DARK_MODE);
 
