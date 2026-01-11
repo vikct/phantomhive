@@ -9,7 +9,7 @@ import {
   TuiOption,
   TuiTextfield,
 } from '@taiga-ui/core';
-import { TuiBadge, TuiBadgedContent, TuiButtonSelect } from '@taiga-ui/kit';
+import { TuiButtonSelect } from '@taiga-ui/kit';
 
 @Component({
   selector: 'app-language-switcher',
@@ -18,8 +18,6 @@ import { TuiBadge, TuiBadgedContent, TuiButtonSelect } from '@taiga-ui/kit';
     CommonModule,
     ReactiveFormsModule,
     TitleCasePipe,
-    TuiBadge,
-    TuiBadgedContent,
     TuiButton,
     TuiButtonSelect,
     TuiDataList,
@@ -28,15 +26,7 @@ import { TuiBadge, TuiBadgedContent, TuiButtonSelect } from '@taiga-ui/kit';
     TuiTextfield,
   ],
   template: `
-    <tui-badged-content class="content">
-      <img
-        alt=""
-        tuiBadge
-        size="s"
-        tuiSlot="bottom"
-        [src]="activeFlag | tuiFlag"
-      />
-
+    <div class="switcher-wrapper">
       <button
         type="button"
         tuiButtonSelect
@@ -63,7 +53,10 @@ import { TuiBadge, TuiBadgedContent, TuiButtonSelect } from '@taiga-ui/kit';
           </button>
         </tui-data-list>
       </button>
-    </tui-badged-content>
+
+      <!-- Manual Badge (floating on top of button) -->
+      <img alt="" class="flag-badge" [src]="activeFlag | tuiFlag" />
+    </div>
   `,
   styles: [
     `
@@ -91,11 +84,23 @@ import { TuiBadge, TuiBadgedContent, TuiButtonSelect } from '@taiga-ui/kit';
         margin-right: 0.5rem;
         box-shadow: inset 0 0 0 1px var(--tui-border-normal);
       }
-      [tuiBadge] {
-        border-radius: 50%;
+      .switcher-wrapper {
+        position: relative;
+        display: inline-flex;
+        vertical-align: middle;
+      }
+      .flag-badge {
+        position: absolute;
+        bottom: -4px;
+        right: -4px;
         width: 1rem;
         height: 1rem;
-        box-shadow: inset 0 0 0 1px var(--tui-border-normal);
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+        pointer-events: none; /* Let clicks pass through to button */
+        z-index: 10;
+        background: var(--tui-base-01); /* Fallback background, matches theme */
       }
       .lang-option {
         display: flex;
