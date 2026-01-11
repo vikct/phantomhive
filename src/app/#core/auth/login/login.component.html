@@ -2,8 +2,10 @@
   <div
     tuiCardLarge
     tuiSurface="elevated"
-    class="login-card-surface"
+    class="liquid-glass-surface login-card-surface"
     data-mode="onDark"
+    style="--glass-surface-bg: url('/XIII.png')"
+    [style.--glass-intensity]="glassIntensity()"
   >
     <form
       tuiForm="m"
@@ -22,11 +24,11 @@
         </span>
       </header>
 
-      @if (error) {
-      <tui-notification appearance="negative" (close)="error = null">
+      @if (error()) {
+      <tui-notification appearance="negative" (close)="error.set(null)">
         <h3 tuiTitle>
           Error
-          <span tuiSubtitle>{{ error }}</span>
+          <span tuiSubtitle>{{ error() }}</span>
         </h3>
       </tui-notification>
       } @if (ssoService.linkingMode()) {

@@ -1,17 +1,54 @@
 /*
- * Glassmorphism Theme Utilities
- * Applied globally to all Taiga UI inputs
+ * Global Brand Colors
+ * To switch themes, change the [ACTIVE] comments below.
  */
-
 :root {
-  /* Override Taiga UI Tokens Globally */
-  --tui-text-01: #ffffff;
-  --tui-text-02: rgba(255, 255, 255, 0.7);
-  --tui-base-01: rgba(255, 255, 255, 0.1);
-  --tui-base-02: rgba(255, 255, 255, 0.2);
+  /* --- PALETTE DEFINITIONS --- */
+
+  /* Royal Blue */
+  --brand-royal-blue: #4169e1;
+  --brand-royal-blue-hover: #375ac0;
+  --brand-royal-blue-active: #2e4aa0;
+
+  /* Titanium Gold */
+  --brand-titanium-gold: #d4af37;
+  --brand-titanium-gold-hover: #bfa030;
+  --brand-titanium-gold-active: #aa8f29;
+
+  /* Black (Monochrome) */
+  --brand-black: #121212;
+  --brand-black-hover: #2c2c2c;
+  --brand-black-active: #000000;
+
+  /* --- ACTIVE THEME CONFIGURATION --- */
+
+  /* [ACTIVE] Royal Blue */
+  --active-brand: var(--brand-royal-blue);
+  --active-brand-hover: var(--brand-royal-blue-hover);
+  --active-brand-active: var(--brand-royal-blue-active);
+
+  /* Option: Titanium Gold (Uncomment to use)
+  --active-brand: var(--brand-titanium-gold);
+  --active-brand-hover: var(--brand-titanium-gold-hover);
+  --active-brand-active: var(--brand-titanium-gold-active);
+  */
+
+  /* Option: Black (Uncomment to use)
+  --active-brand: var(--brand-black);
+  --active-brand-hover: var(--brand-black-hover);
+  --active-brand-active: var(--brand-black-active);
+  */
+
+  /* --- TAIGA UI OVERRIDES --- */
+  --tui-primary: var(--active-brand);
+  --tui-primary-hover: var(--active-brand-hover);
+  --tui-primary-active: var(--active-brand-active);
+
+  --tui-text-action: var(--active-brand);
 }
 
 @import "input.theme";
 @import "header.theme";
+@import "surface.theme";
 
 @import "button.theme";

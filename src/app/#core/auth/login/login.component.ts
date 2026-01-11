@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   FormBuilder,
@@ -62,7 +62,8 @@ import { TuiCardLarge, TuiForm, TuiHeader } from '@taiga-ui/layout';
 })
 export class LoginComponent {
   loginForm: FormGroup;
-  error: string | null = null;
+  protected readonly error = signal<string | null>(null);
+  protected readonly glassIntensity = signal(0);
 
   constructor(
     private fb: FormBuilder,
@@ -87,10 +88,10 @@ export class LoginComponent {
       const success = this.authService.login(username, password);
 
       if (!success) {
-        this.error = 'Invalid username or password';
+        this.error.set('Invalid username or password');
         this.loginForm.get('password')?.reset();
       } else {
-        this.error = null;
+        this.error.set(null);
       }
     }
   }
