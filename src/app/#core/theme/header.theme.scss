@@ -1,0 +1,50 @@
+/* Global Liquid Glass Headers (VisionOS Style) */
+
+/* Reset header container to be transparent layout only */
+/* Reset header container to be transparent layout only */
+header[tuiHeader] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none;
+  padding: 0 !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Apply Liquid Glass Pill directly to the Title H2 */
+header[tuiHeader] h2[tuiTitle],
+header[tuiHeader] .t-title {
+  display: inline-block; /* Make it hug content for true pill shape centered */
+
+  /* VisionOS Material: Same DNA as Inputs/Buttons */
+  background: rgba(255, 255, 255, 0.07) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  /* Shape & Edges */
+  border-radius: 1.5rem !important; /* Deep squircle */
+  border: none !important;
+
+  /* Specular Highlight & Soft Shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important; /* Sharp top reflection */
+
+  /* Spacing */
+  padding: 1rem 2rem !important;
+
+  /* Typography */
+  color: #fff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Hardware Accel */
+  transform: translateZ(0);
+}
+
+/* Subtitle styling inside the pill */
+header[tuiHeader] span[tuiSubtitle],
+header[tuiHeader] .t-subtitle {
+  color: rgba(255, 255, 255, 0.8) !important;
+  display: block; /* Ensure subtitle breaks to new line inside the pill */
+  margin-top: 0.25rem;
+  font-weight: normal;
+}

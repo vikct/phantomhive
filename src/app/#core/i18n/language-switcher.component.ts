@@ -6,7 +6,6 @@ import {
   TuiButton,
   TuiDataList,
   TuiFlagPipe,
-  TuiOption,
   TuiTextfield,
 } from '@taiga-ui/core';
 import { TuiButtonSelect } from '@taiga-ui/kit';
@@ -22,7 +21,6 @@ import { TuiButtonSelect } from '@taiga-ui/kit';
     TuiButtonSelect,
     TuiDataList,
     TuiFlagPipe,
-    TuiOption,
     TuiTextfield,
   ],
   template: `

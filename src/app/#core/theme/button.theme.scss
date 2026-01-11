@@ -1,0 +1,49 @@
+/* Global Liquid Glass Buttons (VisionOS Style) */
+[tuiButton],
+[tuiIconButton] {
+  border-radius: 9999px !important; /* Pill shape */
+
+  /* VisionOS Material: Thinner, Blurier, No Border */
+  background: rgba(255, 255, 255, 0.07) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: none !important; /* Rely on shadow for edges */
+
+  /* Specular Highlight & Soft Shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
+    /* Slightly deeper shadow for lift */ inset 0 1px 0 rgba(255, 255, 255, 0.3) !important; /* Sharp top reflection */
+
+  color: #fff !important;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important; /* Smooth physics-based transition */
+
+  /* Ensure content spacing */
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+
+  /* Ensure hardware acceleration for smooth blur */
+  transform: translateZ(0);
+}
+
+/* Icon button specific adjustment */
+[tuiIconButton] {
+  padding: 0 !important;
+  border-radius: 50% !important; /* Circle for icon buttons */
+}
+
+/* Hover State: Brighten and Lift */
+[tuiButton]:hover,
+[tuiIconButton]:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5) !important; /* Brighten highlight */
+  transform: translateY(-2px) translateZ(0);
+}
+
+/* Active State: Press Down */
+[tuiButton]:active,
+[tuiIconButton]:active {
+  background: rgba(255, 255, 255, 0.1) !important;
+  transform: translateY(0) scale(0.96) translateZ(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
