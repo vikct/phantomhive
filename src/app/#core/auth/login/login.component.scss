@@ -60,17 +60,6 @@
   z-index: -1;
 }
 
-/* Position the accessories (Theme/Lang switcher) in the top-right corner */
-/* Position the accessories (Theme/Lang switcher) in the top-right corner of the FORM */
-span[tuiAccessories] {
-  display: flex;
-  justify-content: flex-end; /* Align to right */
-  width: 100%; /* Take full width to allow right alignment */
-  margin-bottom: -1rem; /* Pull title up slightly if needed, or just 0 */
-  z-index: 10;
-  position: relative; /* Back to relative flow */
-}
-
 .login-form-content {
   position: relative; /* Establish positioning context */
   width: 100%;
@@ -118,7 +107,7 @@ button[type="submit"] {
   padding: 0.25rem;
   border-radius: var(--tui-radius-m);
   transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.1); /* Slight background for buttons */
+  // background: rgba(255, 255, 255, 0.1); /* Slight background for buttons */
 
   &.linking-mode {
     background-color: var(--tui-support-04);

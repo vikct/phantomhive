@@ -11,16 +11,15 @@
       (ngSubmit)="onSubmit()"
       class="login-form-content"
     >
-      <span tuiAccessories>
-        <app-theme-switcher></app-theme-switcher>
-        <app-language-switcher></app-language-switcher>
-      </span>
-
       <header tuiHeader>
         <h2 tuiTitle>
           {{ "LOGIN.TITLE" | translate }}
           <span tuiSubtitle>{{ "LOGIN.SUBTITLE" | translate }}</span>
         </h2>
+        <span tuiAccessories>
+          <app-theme-switcher></app-theme-switcher>
+          <app-language-switcher></app-language-switcher>
+        </span>
       </header>
 
       @if (error) {
