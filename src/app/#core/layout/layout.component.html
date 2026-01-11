@@ -1,10 +1,12 @@
 <tui-root [attr.tuiTheme]="darkMode() ? 'dark' : null">
   @if (authService.isAuthenticated()) {
   <div class="layout-container">
-    <app-header class="header"></app-header>
+    <!-- Sidebar Left (Primary Navigation) -->
+    <app-sidebar class="sidebar"></app-sidebar>
 
-    <div class="main-body">
-      <app-sidebar class="sidebar"></app-sidebar>
+    <!-- Right Column (Header + Content) -->
+    <div class="main-column">
+      <app-header class="header"></app-header>
 
       <main class="content-area">
         <div class="content-wrapper">
