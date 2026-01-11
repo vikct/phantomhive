@@ -33,7 +33,7 @@ header[tuiHeader] .t-title {
   padding: 1rem 2rem !important;
 
   /* Typography */
-  color: #fff !important;
+  color: var(--tui-text-01) !important;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   /* Hardware Accel */
@@ -43,7 +43,7 @@ header[tuiHeader] .t-title {
 /* Subtitle styling inside the pill */
 header[tuiHeader] span[tuiSubtitle],
 header[tuiHeader] .t-subtitle {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: var(--tui-text-02) !important;
   display: block; /* Ensure subtitle breaks to new line inside the pill */
   margin-top: 0.25rem;
   font-weight: normal;

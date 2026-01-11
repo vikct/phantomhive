@@ -3,17 +3,24 @@
 [tuiIconButton] {
   border-radius: 9999px !important; /* Pill shape */
 
-  /* VisionOS Material: Thinner, Blurier, No Border */
-  background: rgba(255, 255, 255, 0.07) !important;
+  /* VisionOS Material: Tinted Glass */
+  /* Background: 30% Opacity Brand Color + Blur */
+  background: color-mix(
+    in srgb,
+    var(--active-brand),
+    transparent 70%
+  ) !important;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: none !important; /* Rely on shadow for edges */
+
+  /* Border: 20% Opacity Brand Color (Subtle definition) */
+  border: 1px solid color-mix(in srgb, var(--active-brand), transparent 80%) !important;
 
   /* Specular Highlight & Soft Shadow */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
-    /* Slightly deeper shadow for lift */ inset 0 1px 0 rgba(255, 255, 255, 0.3) !important; /* Sharp top reflection */
+    /* Inner light reflection */ inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
 
-  color: #fff !important;
+  color: var(--tui-text-01) !important;
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important; /* Smooth physics-based transition */
 
   /* Ensure content spacing */
@@ -33,10 +40,21 @@
 /* Hover State: Brighten and Lift */
 [tuiButton]:hover,
 [tuiIconButton]:hover {
-  background: rgba(255, 255, 255, 0.15) !important;
+  /* Increase opacity on hover (50% transparency) */
+  background: color-mix(
+    in srgb,
+    var(--active-brand),
+    transparent 50%
+  ) !important;
+
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5) !important; /* Brighten highlight */
+    inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
   transform: translateY(-2px) translateZ(0);
+  border-color: color-mix(
+    in srgb,
+    var(--active-brand),
+    transparent 60%
+  ) !important;
 }
 
 /* Active State: Press Down */

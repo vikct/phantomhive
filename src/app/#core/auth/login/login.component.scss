@@ -12,52 +12,19 @@
  * Surface Card Layout (Image Background + Glass)
  * The card has the image, and a pseudo-element provides the glass overlay.
  */
+/*
+ * Surface Card Layout (Image Background + Glass)
+ * Now uses global .liquid-glass-surface for the glass effect.
+ * This class just handles the card dimensions and flex layout.
+ */
 .login-card-surface {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 30rem;
   width: 100%;
-  border-radius: var(--tui-radius-l);
-  overflow: hidden; /* Clip the pseudo-element */
-
-  /* The Background Image (On Parent) */
-  background-image: url("/XIII.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
   padding: 2rem;
-  color: #fff;
-  z-index: 0; /* Establish stacking context */
-  isolation: auto; /* Revert isolation, rely on z-index stacking */
-
-  overflow: hidden; /* This should clip the background and the overlay */
-  border-radius: var(--tui-radius-l);
-
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-
-  /* Fix border leakage on some browsers */
-  background-clip: padding-box;
-  transform: translateZ(0); /* Force GPU layer for clipping */
-}
-
-/* 
- * The Dark Glass Overlay 
- * Sits at z-index: -1, which is ABOVE the parent background 
- * but BELOW the parent content in this Stacking Context.
- */
-.login-card-surface::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.25); /* Very light dark tint */
-  backdrop-filter: blur(8px); /* Blur */
-  -webkit-backdrop-filter: blur(8px);
-  z-index: -1;
 }
 
 .login-form-content {

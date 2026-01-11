@@ -1,0 +1,63 @@
+/* Global Liquid Glass Surface (VisionOS Style) */
+
+/* 
+ * Usage:
+ * <div class="liquid-glass-surface" style="--glass-surface-bg: url('/path/to/image.jpg')">
+ *   ... content ...
+ * </div>
+ */
+
+.liquid-glass-surface {
+  position: relative;
+  /* Ensure stacking context for pseudo-element overlay */
+  z-index: 0;
+  isolation: auto;
+
+  /* Shape & Edges */
+  border-radius: var(--tui-radius-l);
+  overflow: hidden; /* Clip the background and the overlay */
+
+  /* The Background Image (Dynamic via Variable) */
+  background-image: var(--glass-surface-bg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  /* VisionOS Glass Surface Characteristics */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  /* Fix border leakage on some browsers */
+  background-clip: padding-box;
+  transform: translateZ(0); /* Force GPU layer for clipping */
+
+  /* Default text color for contrast on dark glass */
+  color: #fff;
+}
+
+/* 
+ * The Dark Glass Overlay 
+ * Sits at z-index: -1, which is ABOVE the parent background 
+ * but BELOW the parent content in this Stacking Context.
+ */
+.liquid-glass-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* 
+   * Dynamic Frost Intensity 
+   * Controlled by --glass-intensity (0 to 1). Default: 1 (100%)
+   */
+  --current-intensity: var(--glass-intensity, 1);
+
+  /* Tint opacity scales with intensity */
+  background: rgba(0, 0, 0, calc(0.25 * var(--current-intensity)));
+
+  /* Blur scales with intensity (Max 20px to match Inputs) */
+  backdrop-filter: blur(calc(20px * var(--current-intensity)));
+  -webkit-backdrop-filter: blur(calc(20px * var(--current-intensity)));
+
+  z-index: -1;
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease; /* Smooth toggle */
+}
