@@ -1,0 +1,162 @@
+{
+  "C:\\Repos\\Personal\\phantomhive\\src\\main.ts": {
+    "mtime": 1765196435.1955616,
+    "hash": "b5c1d106e573fea21ef1ad9e4360e77a"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\app.component.spec.ts": {
+    "mtime": 1767568225.9066844,
+    "hash": "e162d72d4d690c1168691d96b1850884"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\app.component.ts": {
+    "mtime": 1768034972.1231139,
+    "hash": "be852b93c2bb2a2548877d5f7c2aa662"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\app.config.ts": {
+    "mtime": 1767568225.9076858,
+    "hash": "9328b67840c187d1198f7af3340635ec"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\app.routes.ts": {
+    "mtime": 1767568225.908685,
+    "hash": "639d6981c39da64e2a3cdf81377e33c1"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\core.module.ts": {
+    "mtime": 1768034972.117415,
+    "hash": "3ec1e89e78bd850d638de54be600ac12"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\core.service.ts": {
+    "mtime": 1767568225.8967755,
+    "hash": "af6afce3c66c70a27c9ca2b7aad87339"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\auth.guard.ts": {
+    "mtime": 1767568225.8880947,
+    "hash": "ac533ed5c019267ab49d0694e3229aa0"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\auth.service.ts": {
+    "mtime": 1767568809.8557606,
+    "hash": "b10efed3b05c07b7dbf9ae2e1c9a72b4"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\login\\login.component.ts": {
+    "mtime": 1768204726.1623406,
+    "hash": "f2871ce655a4fd7842b6b9ea4c6121a2"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\single-sign-on\\single-sign-on.module.ts": {
+    "mtime": 1767568809.8678517,
+    "hash": "5020ea91097684804d7b523aacbb2b85"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\single-sign-on\\single-sign-on.service.ts": {
+    "mtime": 1768204726.1651833,
+    "hash": "2b13ef067100ac1120d15bdcbcd99213"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\single-sign-on\\facebook\\facebook-sso-button.component.ts": {
+    "mtime": 1767568809.8598166,
+    "hash": "8a83b3ddef3decfd1cb32bd1c466a852"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\single-sign-on\\facebook\\facebook-sso.service.ts": {
+    "mtime": 1767568809.8608153,
+    "hash": "5c4fcebda6cd754232d6c8e53b510821"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\single-sign-on\\github\\github-sso-button.component.ts": {
+    "mtime": 1768204726.1623406,
+    "hash": "9369d8b59ad17db47a0d989ffaae0f35"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\single-sign-on\\github\\github-sso.service.ts": {
+    "mtime": 1767568809.8623242,
+    "hash": "c7cc4b49da81b3bc13f6095cf89025e6"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\single-sign-on\\google\\firebase.config.ts": {
+    "mtime": 1767568809.8633335,
+    "hash": "df0d83e2acf1f966e2c40258ecf8ce84"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\single-sign-on\\google\\google-sso-button.component.ts": {
+    "mtime": 1767568809.8653324,
+    "hash": "93127bc896c11c25905b6a7c812d701f"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\single-sign-on\\google\\google-sso.service.ts": {
+    "mtime": 1767568809.8668396,
+    "hash": "3fbe90179e676c846de24d064a60cd16"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\single-sign-on\\twitter\\twitter-sso-button.component.ts": {
+    "mtime": 1768204726.1651833,
+    "hash": "48f0298597a2c3a3dc621eb6682d917e"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\single-sign-on\\twitter\\twitter-sso.service.ts": {
+    "mtime": 1768204726.1651833,
+    "hash": "4c29132d30e6edd7c5a5b4c57e2b711e"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\i18n\\app-translation.service.ts": {
+    "mtime": 1767568225.897779,
+    "hash": "b8902eb0af84f3db95a878e8597e2705"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\i18n\\language-switcher.component.ts": {
+    "mtime": 1768204726.1672,
+    "hash": "3f174b65874b1dfd0ad39e02bec5059f"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\layout\\layout.component.ts": {
+    "mtime": 1768034972.1211033,
+    "hash": "4261cf3eda722336865e3ad04c9211b5"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\layout\\layout.module.ts": {
+    "mtime": 1767568225.905685,
+    "hash": "1077e86a0d1509da8ff2c2c56a1e2544"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\layout\\components\\footer\\footer.component.ts": {
+    "mtime": 1767568809.8698492,
+    "hash": "3449a3b788dd3093e928c3cc905fbe2f"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\layout\\components\\header\\header.component.ts": {
+    "mtime": 1768034972.1200492,
+    "hash": "663bcf3bb28854e0234256bea268f9b9"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\layout\\components\\sidebar\\sidebar.component.ts": {
+    "mtime": 1767568809.8715904,
+    "hash": "0ef4f8a64259e5b98521a5298b3fdc7d"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\theme\\theme-switcher.component.ts": {
+    "mtime": 1768204726.1709335,
+    "hash": "95d910882bca62f1c9cb57df5bcc1124"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\features\\home\\home.component.ts": {
+    "mtime": 1767568225.909693,
+    "hash": "01b50b20170088f4c3f8560d6e867286"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\environments\\environment.development.ts": {
+    "mtime": 1767568809.8755994,
+    "hash": "f1da50110988ff771b1705cca3f1733a"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\environments\\environment.ts": {
+    "mtime": 1767568809.8755994,
+    "hash": "6a41fdbc669d874cc92a56f744176c77"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\help.txt": {
+    "mtime": 1777996921.6607344,
+    "hash": "1f1bd37a50dbbca23ba60c203571ea8c"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\README.md": {
+    "mtime": 1765196435.1634498,
+    "hash": "cbec9082984253a73084e651e4235b42"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\index.html": {
+    "mtime": 1765196435.1955616,
+    "hash": "4a2f51a54ea74c35000ce1c8e6ef209c"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\auth\\login\\login.component.html": {
+    "mtime": 1768204726.1623406,
+    "hash": "6d6491fc0de35f92958b70d235019b73"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\layout\\layout.component.html": {
+    "mtime": 1768204726.1698294,
+    "hash": "11740094f2952bfb2b7390240c162c22"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\layout\\components\\header\\header.component.html": {
+    "mtime": 1768204726.1672,
+    "hash": "a312e9d56e0b19478e1b4b7e2fda0176"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\src\\app\\#core\\layout\\components\\sidebar\\sidebar.component.html": {
+    "mtime": 1767568225.9036698,
+    "hash": "7eacebef2ce28e2bad675bc060ad6bda"
+  },
+  "C:\\Repos\\Personal\\phantomhive\\public\\XIII.png": {
+    "mtime": 1768204726.1595392,
+    "hash": "87dcdf85e178c3f81d3f7ed4699151c8"
+  }
+}

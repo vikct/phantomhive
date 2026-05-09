@@ -15,3 +15,29 @@ body {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  /* Primary Color - Blue */
+  --tui-primary: #2962FF;
+  --tui-primary-hover: #1E88E5;
+  --tui-primary-active: #1565C0;
+
+  /* Accent Color - Titanium Gold */
+  --app-accent: #D4AF37;
+  --tui-focus: var(--app-accent);
+
+  /* Dark Theme Base */
+  --tui-base-01: #000000; /* Main Background */
+  --tui-base-02: #141414; /* Secondary/Container Background */
+  --tui-text-01: #ffffff; /* Primary Text */
+  --tui-text-02: #e0e0e0; /* Secondary Text */
+
+  /* Fix for content area background */
+  --tui-background-base: var(--tui-base-01);
+  --tui-background-base-alt: var(--tui-base-01);
+}
+
+body {
+  background-color: var(--tui-base-01);
+  color: var(--tui-text-01);
+}
