@@ -1,7 +1,8 @@
-/*
- * Global Brand Colors
- * To switch themes, change the [ACTIVE] comments below.
- */
+@use "input.theme" as *;
+@use "header.theme" as *;
+@use "surface.theme" as *;
+@use "button.theme" as *;
+
 :root {
   /* --- PALETTE DEFINITIONS --- */
 
@@ -46,9 +47,3 @@
 
   --tui-text-action: var(--active-brand);
 }
-
-@import "input.theme";
-@import "header.theme";
-@import "surface.theme";
-
-@import "button.theme";
