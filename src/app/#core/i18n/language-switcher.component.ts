@@ -1,4 +1,4 @@
-import { CommonModule, TitleCasePipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { AppTranslationService } from '@core/i18n/app-translation.service';
@@ -16,7 +16,6 @@ import { TuiButtonSelect } from '@taiga-ui/kit';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    TitleCasePipe,
     TuiButton,
     TuiButtonSelect,
     TuiDataList,
