@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { TuiRoot } from '@taiga-ui/core';
-import { NG_EVENT_PLUGINS } from '@taiga-ui/event-plugins';
+import { provideTaiga, TuiRoot } from '@taiga-ui/core';
 
 @NgModule({
   imports: [TuiRoot],
-  providers: [NG_EVENT_PLUGINS],
+  providers: [provideTaiga()],
   exports: [TuiRoot],
 })
 export class LayoutModule {}

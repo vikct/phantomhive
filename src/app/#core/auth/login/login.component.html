@@ -4,7 +4,7 @@
     tuiSurface="elevated"
     class="liquid-glass-surface login-card-surface"
     data-mode="onDark"
-    style="--glass-surface-bg: url('/XIII.png')"
+    style="--glass-surface-bg: url(&quot;/XIII.png&quot;)"
     [style.--glass-intensity]="glassIntensity()"
   >
     <form
@@ -25,52 +25,68 @@
       </header>
 
       @if (error()) {
-      <tui-notification appearance="negative" (close)="error.set(null)">
-        <h3 tuiTitle>
-          Error
-          <span tuiSubtitle>{{ error() }}</span>
-        </h3>
-      </tui-notification>
-      } @if (ssoService.linkingMode()) {
-      <tui-notification
-        appearance="warning"
-        (close)="ssoService.logout()"
-        class="tui-space_bottom-4"
-      >
-        <h3 tuiTitle>
-          {{ "LOGIN.LINK_REQUIRED_TITLE" | translate }}
-          <span tuiSubtitle>{{ ssoService.ssoError() | translate }}</span>
-        </h3>
-      </tui-notification>
+        <div tuiNotification appearance="negative" class="tui-space_bottom-4">
+          <h3 tuiTitle>
+            Error
+            <span tuiSubtitle>{{ error() }}</span>
+          </h3>
+          <button
+            tuiButton
+            type="button"
+            appearance="flat"
+            size="s"
+            iconStart="@tui.close"
+            class="t-close"
+            (click)="error.set(null)"
+          ></button>
+        </div>
+      }
+      @if (ssoService.linkingMode()) {
+        <div tuiNotification appearance="warning" class="tui-space_bottom-4">
+          <h3 tuiTitle>
+            {{ "LOGIN.LINK_REQUIRED_TITLE" | translate }}
+            <span tuiSubtitle>{{ ssoService.ssoError() | translate }}</span>
+          </h3>
+          <button
+            tuiButton
+            type="button"
+            appearance="flat"
+            size="s"
+            iconStart="@tui.close"
+            class="t-close"
+            (click)="ssoService.logout()"
+          ></button>
+        </div>
       } @else if (ssoService.ssoError(); as ssoError) {
-      <tui-notification
-        appearance="info"
-        (close)="ssoService.ssoError.set(null)"
-      >
-        <h3 tuiTitle>
-          {{ "LOGIN.OR" | translate }}
-          <span tuiSubtitle>{{ ssoError | translate }}</span>
-        </h3>
-      </tui-notification>
+        <div tuiNotification appearance="info" class="tui-space_bottom-4">
+          <h3 tuiTitle>
+            {{ "LOGIN.OR" | translate }}
+            <span tuiSubtitle>{{ ssoError | translate }}</span>
+          </h3>
+          <button
+            tuiButton
+            type="button"
+            appearance="flat"
+            size="s"
+            iconStart="@tui.close"
+            class="t-close"
+            (click)="ssoService.ssoError.set(null)"
+          ></button>
+        </div>
       }
 
       <tui-textfield>
         <label tuiLabel>{{ "LOGIN.USERNAME" | translate }}</label>
-        <input formControlName="username" tuiTextfield />
+        <input formControlName="username" tuiInput />
       </tui-textfield>
-      <tui-error
-        formControlName="username"
-        [error]="[] | tuiFieldError | async"
-      ></tui-error>
+      <tui-error formControlName="username"></tui-error>
 
       <tui-textfield>
         <label tuiLabel>{{ "LOGIN.PASSWORD" | translate }}</label>
-        <input formControlName="password" tuiTextfield type="password" />
+        <input formControlName="password" tuiInput type="password" />
+        <tui-icon tuiPassword />
       </tui-textfield>
-      <tui-error
-        formControlName="password"
-        [error]="[] | tuiFieldError | async"
-      ></tui-error>
+      <tui-error formControlName="password"></tui-error>
 
       <footer>
         <button tuiButton type="submit" [disabled]="loginForm.invalid">

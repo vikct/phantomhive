@@ -19,7 +19,6 @@
 .logo-text {
   font-weight: 600;
   font-size: 1.25rem;
-  color: var(--tui-text-01);
   letter-spacing: 0.5px;
 }
 
@@ -27,20 +26,5 @@
   display: flex;
   align-items: center;
   gap: 0.5rem; /* Gap between icons */
-
-  /* Glass Pill Container */
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
   padding: 0.25rem 0.5rem; /* Inner spacing */
-  border-radius: 9999px; /* Pill Shape */
-  border: 1px solid rgba(255, 255, 255, 0.15); /* Subtle border */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-
-  transition: background 0.3s ease;
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.08); /* Slightly lighter on hover */
-  }
 }
