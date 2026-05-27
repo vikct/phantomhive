@@ -3,12 +3,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { AppTranslationService } from '@core/i18n/app-translation.service';
 import {
+  TuiAppearance,
   TuiButton,
   TuiDataList,
-  TuiFlagPipe,
+  TuiDropdown,
   TuiTextfield,
 } from '@taiga-ui/core';
-import { TuiButtonSelect } from '@taiga-ui/kit';
+import { TuiFlagPipe } from '@taiga-ui/kit';
+import { signal } from '@angular/core';
 
 @Component({
   selector: 'app-language-switcher',
@@ -16,31 +18,34 @@ import { TuiButtonSelect } from '@taiga-ui/kit';
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    TuiAppearance,
     TuiButton,
-    TuiButtonSelect,
     TuiDataList,
+    TuiDropdown,
     TuiFlagPipe,
     TuiTextfield,
   ],
   template: `
     <div class="switcher-wrapper">
       <button
-        type="button"
-        tuiButtonSelect
+        tuiButton
         tuiIconButton
+        type="button"
         appearance="flat"
         size="s"
-        [iconStart]="'languages'"
-        [formControl]="languageControl"
+        iconStart="@tui.languages"
+        [tuiDropdown]="dropdown"
+        [(tuiDropdownOpen)]="dropdownOpen"
         class="lang-switcher"
       >
         <span class="lang-code">{{ languageControl.value | uppercase }}</span>
+      </button>
 
-        <tui-data-list *tuiTextfieldDropdown>
+      <ng-template #dropdown>
+        <tui-data-list tuiAppearance="elevated">
           <button
             *ngFor="let lang of languages"
             tuiOption
-            new
             [value]="lang"
             (click)="setLang(lang)"
             class="lang-option"
@@ -49,7 +54,7 @@ import { TuiButtonSelect } from '@taiga-ui/kit';
             {{ getLabel(lang) }}
           </button>
         </tui-data-list>
-      </button>
+      </ng-template>
 
       <!-- Manual Badge (floating on top of button) -->
       <img alt="" class="flag-badge" [src]="activeFlag | tuiFlag" />
@@ -108,6 +113,7 @@ import { TuiButtonSelect } from '@taiga-ui/kit';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LanguageSwitcherComponent {
+  protected readonly dropdownOpen = signal(false);
   languageControl = new FormControl('en');
   readonly languages = ['en', 'zh', 'ja'];
 
@@ -145,5 +151,6 @@ export class LanguageSwitcherComponent {
 
   setLang(lang: string) {
     this.languageControl.setValue(lang);
+    this.dropdownOpen.set(false);
   }
 }

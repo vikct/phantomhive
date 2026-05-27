@@ -25,9 +25,12 @@ import {
   TuiNotification,
   TuiTextfield,
   TuiTitle,
+  TuiIcon,
+  TuiLabel,
+  TuiInput,
 } from '@taiga-ui/core';
-import { TuiFieldErrorPipe } from '@taiga-ui/kit';
-import { TuiCardLarge, TuiForm, TuiHeader } from '@taiga-ui/layout';
+import { TuiPassword } from '@taiga-ui/kit';
+import { TuiCardLarge, TuiForm, TuiHeader, TuiSurface } from '@taiga-ui/layout';
 
 @Component({
   selector: 'app-login',
@@ -50,12 +53,13 @@ import { TuiCardLarge, TuiForm, TuiHeader } from '@taiga-ui/layout';
     TuiNotification,
     TuiTextfield,
     TuiTitle,
-
+    TuiIcon,
+    TuiLabel,
+    TuiInput,
+    TuiPassword,
     TuiCardLarge,
     TuiForm,
     TuiHeader,
-
-    TuiFieldErrorPipe,
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],

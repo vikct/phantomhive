@@ -90,6 +90,6 @@ export class ThemeSwitcherComponent {
 
   protected reset(): void {
     this.darkMode.set(this.media.matches);
-    this.storage.removeItem(this.key);
+    this.storage?.removeItem(this.key);
   }
 }

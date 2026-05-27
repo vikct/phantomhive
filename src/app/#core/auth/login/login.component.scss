@@ -34,14 +34,6 @@
 }
 
 /* Text visibility adjustments */
-/* Force headers to white or specific color if needed, depending on theme */
-:host ::ng-deep header[tuiHeader] h2 {
-  color: #fff !important;
-}
-
-:host ::ng-deep header[tuiHeader] span[tuiSubtitle] {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
 
 /* Glassmorphism for inputs is now handled globally via .glass-inputs class */
 
@@ -62,7 +54,6 @@ button[type="submit"] {
 
 .separator {
   font: var(--tui-font-text-s);
-  color: rgba(255, 255, 255, 0.7); /* Lighter separator on dark overlay */
   white-space: nowrap;
 }
 
