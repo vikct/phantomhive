@@ -5,8 +5,8 @@
     <app-sidebar class="sidebar"></app-sidebar>
 
     <!-- Right Column (Header + Content) -->
-    <div class="main-column">
-      <app-header class="header"></app-header>
+    <div class="main-column" #mainColumn (scroll)="onScroll(mainColumn.scrollTop)">
+      <app-header class="header" [class.is-scrolled]="scrolled"></app-header>
 
       <main class="content-area">
         <div class="content-wrapper">
