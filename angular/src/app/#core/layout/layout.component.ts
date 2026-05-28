@@ -15,4 +15,9 @@ import { FooterComponent } from './components/footer/footer.component';
 export class AppLayoutComponent {
   protected authService = inject(AuthService);
   protected readonly darkMode = inject(TUI_DARK_MODE);
+  protected scrolled = false;
+
+  protected onScroll(scrollTop: number): void {
+    this.scrolled = scrollTop > 0;
+  }
 }

@@ -1,0 +1,159 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 1.5rem;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  transition: background-color 0.3s ease,
+              backdrop-filter 0.3s ease,
+              -webkit-backdrop-filter 0.3s ease,
+              border-color 0.3s ease;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  color: var(--tui-text-01);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.actions-area {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Inset Glass Buttons styling (nested to minimize file size) */
+.actions-area ::ng-deep button[tuiButton],
+.actions-area ::ng-deep button[tuiIconButton] {
+  background: rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid rgba(0, 0, 0, 0.03) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
+              0 1px 2px rgba(0, 0, 0, 0.02) !important;
+  color: var(--tui-text-01) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  transform: scale(1) translateZ(0);
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.08) !important;
+    border-color: rgba(0, 0, 0, 0.06) !important;
+    transform: scale(1.06) translateZ(0) !important;
+  }
+
+  &:active {
+    background: rgba(0, 0, 0, 0.12) !important;
+    transform: scale(0.95) translateZ(0) !important;
+  }
+}
+
+/* Scroll Blur animations */
+@keyframes blur-header {
+  from {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-bottom-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+@keyframes blur-header-dark {
+  from {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-bottom-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@supports ((animation-timeline: scroll()) and (animation-range: 0% 100%)) {
+  .app-header {
+    transition: none !important;
+    animation: blur-header auto linear both;
+    animation-timeline: scroll(nearest);
+    animation-range: 0px 100px;
+  }
+}
+
+/* Dark Mode Overrides */
+:host-context(tui-root[tuiTheme="dark"]) {
+  .app-header {
+    background: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+  }
+
+  .logo-text {
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+  }
+
+  .actions-area ::ng-deep button[tuiButton],
+  .actions-area ::ng-deep button[tuiIconButton] {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+                0 1px 2px rgba(0, 0, 0, 0.1) !important;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.14) !important;
+      border-color: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    &:active {
+      background: rgba(255, 255, 255, 0.2) !important;
+    }
+  }
+
+  @supports ((animation-timeline: scroll()) and (animation-range: 0% 100%)) {
+    .app-header {
+      animation-name: blur-header-dark;
+    }
+  }
+}
+
+/* Fallbacks when scroll-driven animations are unsupported */
+:host(.is-scrolled) {
+  .app-header {
+    background: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+:host-context(tui-root[tuiTheme="dark"]):host(.is-scrolled) {
+  .app-header {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+}

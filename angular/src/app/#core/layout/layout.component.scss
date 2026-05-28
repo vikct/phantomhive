@@ -40,20 +40,19 @@
   min-width: 0;
   height: 100%;
   position: relative;
+  overflow-y: auto; /* Enable scroll on the main column */
 }
 
 /* Header */
 .header {
+  position: sticky;
+  top: 0;
   flex-shrink: 0;
   height: var(--app-header-height);
-
-  /* Floating Margins */
-  margin: var(--layout-gap);
-
-  display: flex;
-  align-items: center;
-  padding: 0 1.5rem;
-  z-index: 10;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 100; /* Overlays the scrolling content */
 }
 
 /* Content Area */
@@ -61,7 +60,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  overflow: hidden; /* Clips content, scrolling is handled by main-column */
 
   /* Spacing */
   margin: 0 var(--layout-gap) var(--layout-gap) var(--layout-gap);
