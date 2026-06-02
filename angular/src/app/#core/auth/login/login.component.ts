@@ -89,14 +89,15 @@ export class LoginComponent {
   onSubmit(): void {
     if (this.loginForm.valid) {
       const { username, password } = this.loginForm.value;
-      const success = this.authService.login(username, password);
-
-      if (!success) {
-        this.error.set('Invalid username or password');
-        this.loginForm.get('password')?.reset();
-      } else {
-        this.error.set(null);
-      }
+      this.authService.login(username, password).subscribe({
+        next: () => {
+          this.error.set(null);
+        },
+        error: (err) => {
+          this.error.set('Invalid username or password');
+          this.loginForm.get('password')?.reset();
+        }
+      });
     }
   }
 }
