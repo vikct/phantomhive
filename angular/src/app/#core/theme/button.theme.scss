@@ -1,6 +1,6 @@
 /* Global Liquid Glass Buttons (VisionOS Style) */
-[tuiButton],
-[tuiIconButton] {
+// [tuiIconButton],
+[tuiButton] {
   border-radius: 9999px !important; /* Pill shape */
 
   /* VisionOS Material: Tinted Glass */
@@ -17,7 +17,8 @@
   border: 1px solid color-mix(in srgb, var(--active-brand), transparent 80%) !important;
 
   /* Specular Highlight & Soft Shadow */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.1),
     /* Inner light reflection */ inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
 
   color: var(--tui-text-01) !important;
@@ -38,8 +39,8 @@
 }
 
 /* Hover State: Brighten and Lift */
-[tuiButton]:hover,
-[tuiIconButton]:hover {
+// [tuiIconButton]:hover,
+[tuiButton]:hover {
   /* Increase opacity on hover (50% transparency) */
   background: color-mix(
     in srgb,
@@ -47,7 +48,8 @@
     transparent 50%
   ) !important;
 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2),
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
   transform: translateY(-2px) translateZ(0);
   border-color: color-mix(
@@ -62,6 +64,7 @@
 [tuiIconButton]:active {
   background: rgba(255, 255, 255, 0.1) !important;
   transform: translateY(0) scale(0.96) translateZ(0);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
 }

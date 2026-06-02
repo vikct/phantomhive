@@ -1,0 +1,76 @@
+/* Liquid Glass Inputs (VisionOS style) */
+
+/* Target the host with high specificity to override Taiga UI v5 appearance styles */
+tui-textfield,
+tui-textfield[data-appearance="textfield"],
+[tuiAppearance][data-appearance="textfield"] {
+  border-radius: 9999px !important; /* Pill shape */
+  border: none !important; /* Remove default border */
+  outline: none !important; /* Disable default Taiga UI v5 outline (which is rectangular) */
+  outline-width: 0 !important;
+  overflow: hidden !important; /* Clip content (including autofill background) to rounded corners */
+
+  /* Apply glass material to the host container instead of internals */
+  background: rgba(255, 255, 255, 0.07) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+
+  box-shadow: 
+    0 4px 10px rgba(0, 0, 0, 0.05),
+    /* Top specular highlight */ inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+
+  transition: box-shadow 0.3s ease, background-color 0.3s ease !important;
+
+  input,
+  [tuiInput] {
+    color: var(--tui-text-01) !important;
+    caret-color: var(--tui-text-01) !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  label,
+  [tuiLabel] {
+    color: var(--tui-text-02) !important;
+  }
+}
+
+/* Hover State */
+tui-textfield:hover:not([data-state="disabled"]):not([data-mode~="readonly"]) {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Focus State: Brand Glow */
+tui-textfield:focus-within,
+tui-textfield[data-focus="true"],
+[tuiAppearance][data-appearance="textfield"]:focus-visible,
+[tuiAppearance][data-appearance="textfield"][data-focus="true"] {
+  /* Brighter background */
+  background: rgba(255, 255, 255, 0.12) !important;
+  outline: none !important; /* Force disable Taiga UI focus outline */
+  outline-width: 0 !important;
+
+  /* Brand Glow (Inset to avoid overflow clipping) */
+  box-shadow: 
+    /* 1. Thin Brand Border */ inset 0 0 0 1px var(--active-brand),
+    /* 2. Soft Brand Ambient Glow */ inset 0 0 20px color-mix(in srgb, var(--active-brand), transparent 70%),
+    /* 3. Keep Top Specular Highlight */ inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Fix autofill text color and disable default Taiga UI v5 clip-path */
+tui-textfield input:-webkit-autofill,
+tui-textfield input:-webkit-autofill:hover,
+tui-textfield input:-webkit-autofill:focus,
+tui-textfield input:-webkit-autofill:active,
+tui-textfield [tuiInput]:-webkit-autofill,
+tui-textfield [tuiInput][chrome-autofilled],
+[tuiAppearance][data-appearance="textfield"] [tuiInput]:-webkit-autofill,
+[tuiAppearance][data-appearance="textfield"] [tuiInput][chrome-autofilled] {
+  -webkit-text-fill-color: var(--tui-text-01) !important;
+  caret-color: var(--tui-text-01) !important;
+  background-clip: border-box !important;
+  /* Disable the default rectangular/small clip-path of Taiga UI v5 */
+  clip-path: none !important;
+}
