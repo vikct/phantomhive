@@ -1,4 +1,4 @@
-import { Injectable, inject } from '@angular/core';
+import { Injectable, inject, Injector, runInInjectionContext } from '@angular/core';
 import {
   Auth,
   GithubAuthProvider,
@@ -15,6 +15,7 @@ import { map } from 'rxjs/operators';
 })
 export class GithubSsoService {
   private auth = inject(Auth);
+  private injector = inject(Injector);
 
   get authState$(): Observable<User | null> {
     return authState(this.auth);
@@ -29,7 +30,7 @@ export class GithubSsoService {
   async login(): Promise<any> {
     try {
       const provider = new GithubAuthProvider();
-      return await signInWithPopup(this.auth, provider);
+      return await runInInjectionContext(this.injector, () => signInWithPopup(this.auth, provider));
     } catch (err: any) {
       if (err.code === 'auth/account-exists-with-different-credential') {
         console.error(
@@ -49,7 +50,7 @@ export class GithubSsoService {
 
   async logout(): Promise<void> {
     try {
-      await signOut(this.auth);
+      await runInInjectionContext(this.injector, () => signOut(this.auth));
       console.log('Signed out from Firebase via GithubService');
     } catch (err) {
       console.error('Firebase signout failed', err);

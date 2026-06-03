@@ -1,0 +1,340 @@
+<div class="gallery-container">
+  <!-- Top Toolbar / Header -->
+  <div class="gallery-header glass-card">
+    <div class="breadcrumbs-container">
+      <div class="breadcrumbs-trail">
+        @for (crumb of breadcrumbs(); track crumb.id; let idx = $index) {
+          <span 
+            class="breadcrumb-item" 
+            [class.active]="idx === breadcrumbs().length - 1"
+            (click)="navigateToBreadcrumb(idx)"
+          >
+            {{ crumb.name }}
+          </span>
+          @if (idx < breadcrumbs().length - 1) {
+            <span class="breadcrumb-separator">/</span>
+          }
+        }
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <!-- File input hidden, triggered by button -->
+      <input 
+        #fileInput 
+        type="file" 
+        accept="image/*" 
+        style="display: none" 
+        (change)="onFileSelected($event)"
+      />
+      <button class="btn btn-primary btn-icon-text" (click)="triggerFileInput(fileInput)" [disabled]="loading()">
+        <span class="icon">📤</span> Upload Image
+      </button>
+      <button class="btn btn-secondary btn-icon-text" (click)="openCreateFolderModal()" [disabled]="loading()">
+        <span class="icon">📁</span> New Folder
+      </button>
+    </div>
+  </div>
+
+  <!-- Batch Action Bar -->
+  @if (selectedItemIds().size > 0) {
+    <div class="batch-bar glass-card slide-down">
+      <div class="batch-info">
+        <span class="selection-count">{{ selectedItemIds().size }} selected</span>
+        <button class="btn-clear" (click)="clearSelection()">Clear Selection</button>
+      </div>
+      <div class="batch-actions">
+        <button class="btn btn-secondary" (click)="openMoveModal(null)">
+          📦 Move Selected
+        </button>
+        <button class="btn btn-danger" (click)="deleteSelected()">
+          🗑️ Delete Selected
+        </button>
+      </div>
+    </div>
+  }
+
+  <!-- Error Alert -->
+  @if (error()) {
+    <div class="alert alert-danger glass-card">
+      <span class="icon">⚠️</span>
+      <span class="alert-message">{{ error() }}</span>
+      <button class="alert-close" (click)="error.set(null)">&times;</button>
+    </div>
+  }
+
+  <!-- Loader -->
+  @if (loading()) {
+    <div class="loader-overlay">
+      <div class="spinner"></div>
+      <p>Syncing with Google Drive...</p>
+    </div>
+  }
+
+  <!-- Main Grid Area -->
+  <div class="explorer-content">
+    
+    <!-- Empty State -->
+    @if (!loading() && items().length === 0) {
+      <div class="empty-state glass-card">
+        <div class="empty-icon">🏜️</div>
+        <h3>This folder is empty</h3>
+        <p>Upload an image or create a subfolder to get started.</p>
+      </div>
+    }
+
+    <!-- Folders Section -->
+    @if (folders().length > 0) {
+      <div class="section-container">
+        <h2 class="section-title">Folders</h2>
+        <div class="folders-grid">
+          @for (folder of folders(); track folder.id) {
+            <div 
+              class="folder-card glass-card clickable" 
+              [class.selected]="selectedItemIds().has(folder.id)"
+              (click)="enterFolder(folder)"
+            >
+              <!-- Selector Checkbox -->
+              <div 
+                class="card-selector" 
+                [class.visible]="selectedItemIds().size > 0"
+                (click)="toggleSelectItem(folder, $event)"
+              >
+                <input 
+                  type="checkbox" 
+                  [checked]="selectedItemIds().has(folder.id)" 
+                  (change)="toggleSelectItem(folder, $event)"
+                />
+              </div>
+
+              <div class="folder-icon">📁</div>
+              <div class="folder-details">
+                <span class="folder-name" [title]="folder.name">{{ folder.name }}</span>
+              </div>
+
+              <!-- Inline Actions Dropdown -->
+              <div class="card-actions" (click)="$event.stopPropagation()">
+                <button class="btn-actions-trigger">•••</button>
+                <div class="actions-dropdown">
+                  <button (click)="openRenameModal(folder)">Rename</button>
+                  <button (click)="openMoveModal(folder)">Move</button>
+                  <button class="danger" (click)="deleteItem(folder)">Delete</button>
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    }
+
+    <!-- Images Section -->
+    @if (images().length > 0) {
+      <div class="section-container">
+        <h2 class="section-title">Images</h2>
+        <div class="images-grid">
+          @for (image of images(); track image.id) {
+            <div 
+              class="image-card glass-card clickable" 
+              [class.selected]="selectedItemIds().has(image.id)"
+              (click)="openLightbox(image)"
+            >
+              <!-- Selector Checkbox -->
+              <div 
+                class="card-selector" 
+                [class.visible]="selectedItemIds().size > 0"
+                (click)="toggleSelectItem(image, $event)"
+              >
+                <input 
+                  type="checkbox" 
+                  [checked]="selectedItemIds().has(image.id)" 
+                  (change)="toggleSelectItem(image, $event)"
+                />
+              </div>
+
+              <div class="image-preview">
+                @if (image.thumbnailLink) {
+                  <!-- Google Drive thumbnail Link usually ends with =s220, we request a higher resolution (e.g. =s400) for nicer grid previews -->
+                  <img [src]="image.thumbnailLink.replace('=s220', '=s400')" [alt]="image.name" loading="lazy" />
+                } @else {
+                  <div class="image-fallback">🖼️</div>
+                }
+              </div>
+
+              <div class="image-info">
+                <span class="image-name" [title]="image.name">{{ image.name }}</span>
+                <span class="image-size">{{ formatBytes(image.size) }}</span>
+              </div>
+
+              <!-- Inline Actions Dropdown -->
+              <div class="card-actions" (click)="$event.stopPropagation()">
+                <button class="btn-actions-trigger">•••</button>
+                <div class="actions-dropdown">
+                  <button (click)="openRenameModal(image)">Rename</button>
+                  <button (click)="openMoveModal(image)">Move</button>
+                  @if (image.webContentLink) {
+                    <a [href]="image.webContentLink" target="_blank" class="dropdown-link">Download</a>
+                  }
+                  <button class="danger" (click)="deleteItem(image)">Delete</button>
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>
+
+<!-- ================= MODALS ================= -->
+
+<!-- Create Folder Modal -->
+@if (activeModal() === 'createFolder') {
+  <div class="modal-backdrop" (click)="activeModal.set(null)">
+    <div class="modal-container glass-card" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h3>Create New Folder</h3>
+        <button class="btn-close" (click)="activeModal.set(null)">&times;</button>
+      </div>
+      <div class="modal-body">
+        <label for="newFolderInput">Folder Name</label>
+        <input 
+          id="newFolderInput"
+          type="text" 
+          placeholder="Enter folder name..." 
+          [(ngModel)]="newFolderName"
+          (keyup.enter)="submitCreateFolder()"
+          autofocus
+        />
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="activeModal.set(null)">Cancel</button>
+        <button class="btn btn-primary" [disabled]="!newFolderName.trim()" (click)="submitCreateFolder()">Create</button>
+      </div>
+    </div>
+  </div>
+}
+
+<!-- Rename Modal -->
+@if (activeModal() === 'rename' && itemToRename()) {
+  <div class="modal-backdrop" (click)="activeModal.set(null)">
+    <div class="modal-container glass-card" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h3>Rename Item</h3>
+        <button class="btn-close" (click)="activeModal.set(null)">&times;</button>
+      </div>
+      <div class="modal-body">
+        <label for="renameInput">New Name</label>
+        <input 
+          id="renameInput"
+          type="text" 
+          placeholder="Enter new name..." 
+          [(ngModel)]="renamedName"
+          (keyup.enter)="submitRename()"
+          autofocus
+        />
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="activeModal.set(null)">Cancel</button>
+        <button class="btn btn-primary" [disabled]="!renamedName.trim() || renamedName.trim() === itemToRename()?.name" (click)="submitRename()">Rename</button>
+      </div>
+    </div>
+  </div>
+}
+
+<!-- Move Modal -->
+@if (activeModal() === 'move') {
+  <div class="modal-backdrop" (click)="activeModal.set(null)">
+    <div class="modal-container glass-card move-modal" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h3>Move to...</h3>
+        <button class="btn-close" (click)="activeModal.set(null)">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Move Explorer Path -->
+        <div class="move-breadcrumbs">
+          @for (crumb of moveFolderBreadcrumbs(); track crumb.id; let idx = $index) {
+            <span 
+              class="move-breadcrumb-item" 
+              (click)="navigateMoveExplorerBreadcrumb(idx)"
+            >
+              {{ crumb.name }}
+            </span>
+            @if (idx < moveFolderBreadcrumbs().length - 1) {
+              <span class="move-breadcrumb-separator">/</span>
+            }
+          }
+        </div>
+
+        <!-- Folder List -->
+        <div class="move-folders-list">
+          @if (moveLoading()) {
+            <div class="move-loader">
+              <div class="spinner spinner-small"></div>
+              <span>Loading folders...</span>
+            </div>
+          } @else {
+            @if (moveFoldersList().length === 0) {
+              <div class="move-empty">No subfolders available.</div>
+            } @else {
+              @for (subfolder of moveFoldersList(); track subfolder.id) {
+                <div class="move-folder-row" (click)="navigateMoveExplorer(subfolder)">
+                  <span class="icon">📁</span>
+                  <span class="name">{{ subfolder.name }}</span>
+                  <span class="arrow">➔</span>
+                </div>
+              }
+            }
+          }
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="activeModal.set(null)">Cancel</button>
+        <button class="btn btn-primary" (click)="submitMove()">
+          Move Here
+        </button>
+      </div>
+    </div>
+  </div>
+}
+
+<!-- Lightbox Modal -->
+@if (lightboxActive() && lightboxImages().length > 0) {
+  <div class="lightbox-backdrop" (click)="closeLightbox()">
+    <!-- Top Bar Controls -->
+    <div class="lightbox-top-bar" (click)="$event.stopPropagation()">
+      <div class="lightbox-metadata">
+        <span class="lightbox-filename">{{ lightboxImages()[lightboxIndex()].name }}</span>
+        <span class="lightbox-filesize">({{ formatBytes(lightboxImages()[lightboxIndex()].size) }})</span>
+      </div>
+      <div class="lightbox-actions">
+        @if (lightboxImages()[lightboxIndex()].webContentLink) {
+          <a [href]="lightboxImages()[lightboxIndex()].webContentLink" target="_blank" class="btn btn-lightbox-action" title="Download">
+            📥 Download
+          </a>
+        }
+        <button class="btn btn-lightbox-action btn-close" (click)="closeLightbox()">&times;</button>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="lightbox-nav lightbox-prev" (click)="prevImage(); $event.stopPropagation()" title="Previous Image">
+      &#10094;
+    </button>
+    
+    <div class="lightbox-content" (click)="$event.stopPropagation()">
+      <img 
+        [src]="lightboxImages()[lightboxIndex()].webContentLink || lightboxImages()[lightboxIndex()].webViewLink" 
+        [alt]="lightboxImages()[lightboxIndex()].name"
+      />
+    </div>
+
+    <button class="lightbox-nav lightbox-next" (click)="nextImage(); $event.stopPropagation()" title="Next Image">
+      &#10095;
+    </button>
+
+    <!-- Bottom Indicator -->
+    <div class="lightbox-counter" (click)="$event.stopPropagation()">
+      {{ lightboxIndex() + 1 }} / {{ lightboxImages().length }}
+    </div>
+  </div>
+}

@@ -40,8 +40,8 @@ yarn-error.log
 /coverage
 /libpeerconnection.log
 testem.log
-/typings
 .client-secret.json
+backend/src/WebApi/google-credentials.json
 
 # System files
 .DS_Store
