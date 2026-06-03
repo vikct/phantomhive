@@ -13,5 +13,11 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/home/home.component').then((m) => m.HomeComponent),
   },
+  {
+    path: 'gallery',
+    canActivate: [AuthGuard],
+    loadComponent: () =>
+      import('./features/gallery/gallery.component').then((m) => m.GalleryComponent),
+  },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];

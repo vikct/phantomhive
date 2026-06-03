@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { NgTemplateOutlet } from '@angular/common';
 import { TuiRoot, TUI_DARK_MODE } from '@taiga-ui/core';
 import { AuthService } from '@core/auth/auth.service';
 import { HeaderComponent } from './components/header/header.component';
@@ -8,7 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [TuiRoot, HeaderComponent, SidebarComponent, FooterComponent],
+  imports: [TuiRoot, HeaderComponent, SidebarComponent, FooterComponent, NgTemplateOutlet],
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss'],
 })

@@ -1,4 +1,4 @@
-import { Injectable, inject } from '@angular/core';
+import { Injectable, inject, Injector, runInInjectionContext } from '@angular/core';
 import {
   Auth,
   GoogleAuthProvider,
@@ -15,6 +15,7 @@ import { map } from 'rxjs/operators';
 })
 export class GoogleSsoService {
   private auth = inject(Auth);
+  private injector = inject(Injector);
 
   get authState$(): Observable<User | null> {
     return authState(this.auth);
@@ -29,7 +30,7 @@ export class GoogleSsoService {
   async login(): Promise<void> {
     try {
       const provider = new GoogleAuthProvider();
-      await signInWithPopup(this.auth, provider);
+      await runInInjectionContext(this.injector, () => signInWithPopup(this.auth, provider));
     } catch (err) {
       console.error('Google login failed', err);
       throw err;
@@ -38,7 +39,7 @@ export class GoogleSsoService {
 
   async logout(): Promise<void> {
     try {
-      await signOut(this.auth);
+      await runInInjectionContext(this.injector, () => signOut(this.auth));
       console.log('Signed out from Firebase via GoogleService');
     } catch (err) {
       console.error('Firebase signout failed', err);

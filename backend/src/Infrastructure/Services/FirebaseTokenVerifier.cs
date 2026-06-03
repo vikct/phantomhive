@@ -24,7 +24,7 @@ namespace Phantomhive.Infrastructure.Services
             try
             {
                 var projectId = "fenrisulfr42";
-                var keysUrl = $"https://www.googleapis.com/robot/v1/metadata/x509/securetoken-api-project-{projectId}";
+                var keysUrl = "https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com";
 
                 // Fetch Google public certificates for verification
                 var certificates = await _httpClient.GetFromJsonAsync<Dictionary<string, string>>(keysUrl);

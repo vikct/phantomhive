@@ -26,6 +26,9 @@ namespace Phantomhive.Infrastructure
             // Register HttpClient for FirebaseTokenVerifier
             services.AddHttpClient<IFirebaseTokenVerifier, FirebaseTokenVerifier>();
 
+            // Register GoogleDriveService
+            services.AddScoped<IGoogleDriveService, GoogleDriveService>();
+
             return services;
         }
     }
