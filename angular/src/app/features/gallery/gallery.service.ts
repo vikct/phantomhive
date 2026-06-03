@@ -1,6 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '@env/environment';
 
 export interface GalleryItem {
   id: string;
@@ -18,7 +19,7 @@ export interface GalleryItem {
   providedIn: 'root',
 })
 export class GalleryService {
-  private readonly API_URL = 'http://localhost:5214/api/gallery';
+  private readonly API_URL = `${environment.apiUrl}/gallery`;
   private http = inject(HttpClient);
 
   listFolder(folderId?: string): Observable<GalleryItem[]> {

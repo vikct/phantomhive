@@ -5,6 +5,7 @@ import { Auth, authState } from '@angular/fire/auth';
 import { SingleSignOnService } from './single-sign-on/single-sign-on.service';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import { environment } from '@env/environment';
 
 interface AuthResponse {
   token: string;
@@ -16,7 +17,7 @@ interface AuthResponse {
   providedIn: 'root',
 })
 export class AuthService {
-  private readonly API_URL = 'http://localhost:5214/api/auth';
+  private readonly API_URL = `${environment.apiUrl}/auth`;
 
   currentUser = signal<string | null>(null);
   token = signal<string | null>(null);
