@@ -14,8 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm ci --legacy-peer-deps && npm run build
+        working-directory: angular
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FENRISULFR42 }}
           projectId: fenrisulfr42
+          entryPoint: angular
