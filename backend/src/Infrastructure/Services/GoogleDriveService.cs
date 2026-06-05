@@ -40,16 +40,21 @@ namespace Phantomhive.Infrastructure.Services
                 }
             }
 
-            if (!System.IO.File.Exists(actualPath))
+            GoogleCredential credential;
+            if (System.IO.File.Exists(actualPath))
             {
-                throw new FileNotFoundException($"Google Drive service credentials file not found at: {actualPath}");
-            }
-
 #pragma warning disable CS0618
-            var json = System.IO.File.ReadAllText(actualPath);
-            var credential = GoogleCredential.FromJson(json)
-                .CreateScoped(DriveService.Scope.Drive); // Full access to edit files/folders shared with it
+                var json = System.IO.File.ReadAllText(actualPath);
+                credential = GoogleCredential.FromJson(json)
+                    .CreateScoped(DriveService.Scope.Drive);
 #pragma warning restore CS0618
+            }
+            else
+            {
+                // Fallback to Application Default Credentials when running in Cloud Run
+                credential = GoogleCredential.GetApplicationDefault()
+                    .CreateScoped(DriveService.Scope.Drive);
+            }
 
             _driveService = new DriveService(new BaseClientService.Initializer
             {
