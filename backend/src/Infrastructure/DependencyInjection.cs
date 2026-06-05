@@ -12,10 +12,19 @@ namespace Phantomhive.Infrastructure
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            var connectionString = configuration.GetConnectionString("DefaultConnection") ?? "Host=localhost;Database=phantomhive;Username=postgres;Password=postgres";
+            var connectionString = configuration.GetConnectionString("DefaultConnection") ?? "Data Source=phantomhive.db";
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseNpgsql(connectionString));
+            {
+                if (connectionString.Contains("Host=") || connectionString.Contains("Server=") || connectionString.Contains("Port="))
+                {
+                    options.UseNpgsql(connectionString);
+                }
+                else
+                {
+                    options.UseSqlite(connectionString);
+                }
+            });
 
             services.AddScoped<IApplicationDbContext>(provider =>
                 provider.GetRequiredService<ApplicationDbContext>());
