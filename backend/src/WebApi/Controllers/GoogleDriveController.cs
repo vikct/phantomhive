@@ -32,6 +32,20 @@ namespace Phantomhive.WebApi.Controllers
             }
         }
 
+        [HttpGet("file/{fileId}")]
+        public async Task<IActionResult> DownloadFile(string fileId)
+        {
+            try
+            {
+                var (stream, contentType, fileName) = await _driveService.DownloadFileAsync(fileId);
+                return File(stream, contentType, fileName);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
+        }
+
         [HttpPost("folder")]
         public async Task<IActionResult> CreateFolder([FromBody] CreateFolderRequest request)
         {

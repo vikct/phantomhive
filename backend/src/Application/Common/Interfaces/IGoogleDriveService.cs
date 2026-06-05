@@ -12,6 +12,7 @@ namespace Phantomhive.Application.Common.Interfaces
         Task<GoogleDriveItemDto> RenameItemAsync(string itemId, string newName);
         Task<GoogleDriveItemDto> MoveItemsAsync(List<string> itemIds, string targetFolderId);
         Task DeleteItemsAsync(List<string> itemIds);
+        Task<(Stream Stream, string ContentType, string FileName)> DownloadFileAsync(string fileId);
     }
 
     public class GoogleDriveItemDto
