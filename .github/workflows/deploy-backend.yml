@@ -28,18 +28,18 @@ jobs:
 
       - name: Configure Docker Auth
         run: |
-          gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
+          gcloud auth configure-docker asia-southeast1-docker.pkg.dev --quiet
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/phantomhive/backend:${{ github.sha }} -f backend/src/WebApi/Dockerfile backend
-          docker push us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/phantomhive/backend:${{ github.sha }}
+          docker build -t asia-southeast1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/phantomhive/backend:${{ github.sha }} -f backend/src/WebApi/Dockerfile backend
+          docker push asia-southeast1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/phantomhive/backend:${{ github.sha }}
 
       - name: Deploy to Cloud Run
         uses: google-github-actions/deploy-cloudrun@v2
         with:
           service: phantomhive-backend
-          region: us-central1
-          image: us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/phantomhive/backend:${{ github.sha }}
+          region: asia-southeast1
+          image: asia-southeast1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/phantomhive/backend:${{ github.sha }}
           env_vars: |
             ConnectionStrings__DefaultConnection=${{ secrets.POSTGRES_CONNECTION_STRING }}
