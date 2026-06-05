@@ -152,12 +152,7 @@
               </div>
 
               <div class="image-preview">
-                @if (image.thumbnailLink) {
-                  <!-- Google Drive thumbnail Link usually ends with =s220, we request a higher resolution (e.g. =s400) for nicer grid previews -->
-                  <img [src]="image.thumbnailLink.replace('=s220', '=s400')" [alt]="image.name" loading="lazy" />
-                } @else {
-                  <div class="image-fallback">🖼️</div>
-                }
+                <img [src]="getImageUrl(image.id)" [alt]="image.name" loading="lazy" />
               </div>
 
               <div class="image-info">
@@ -171,9 +166,7 @@
                 <div class="actions-dropdown">
                   <button (click)="openRenameModal(image)">Rename</button>
                   <button (click)="openMoveModal(image)">Move</button>
-                  @if (image.webContentLink) {
-                    <a [href]="image.webContentLink" target="_blank" class="dropdown-link">Download</a>
-                  }
+                  <a [href]="getImageUrl(image.id)" download target="_blank" class="dropdown-link">Download</a>
                   <button class="danger" (click)="deleteItem(image)">Delete</button>
                 </div>
               </div>
@@ -307,11 +300,9 @@
         <span class="lightbox-filesize">({{ formatBytes(lightboxImages()[lightboxIndex()].size) }})</span>
       </div>
       <div class="lightbox-actions">
-        @if (lightboxImages()[lightboxIndex()].webContentLink) {
-          <a [href]="lightboxImages()[lightboxIndex()].webContentLink" target="_blank" class="btn btn-lightbox-action" title="Download">
-            📥 Download
-          </a>
-        }
+        <a [href]="getImageUrl(lightboxImages()[lightboxIndex()].id)" download target="_blank" class="btn btn-lightbox-action" title="Download">
+          📥 Download
+        </a>
         <button class="btn btn-lightbox-action btn-close" (click)="closeLightbox()">&times;</button>
       </div>
     </div>
@@ -323,7 +314,7 @@
     
     <div class="lightbox-content" (click)="$event.stopPropagation()">
       <img 
-        [src]="lightboxImages()[lightboxIndex()].webContentLink || lightboxImages()[lightboxIndex()].webViewLink" 
+        [src]="getImageUrl(lightboxImages()[lightboxIndex()].id)" 
         [alt]="lightboxImages()[lightboxIndex()].name"
       />
     </div>

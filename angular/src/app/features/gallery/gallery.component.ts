@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener, signal, computed, inject } from '@angu
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { GalleryService, GalleryItem } from './gallery.service';
+import { environment } from '@env/environment';
 
 @Component({
   selector: 'app-gallery',
@@ -350,6 +351,10 @@ export class GalleryComponent implements OnInit {
   }
 
   // Utilities
+  getImageUrl(id: string): string {
+    return `${environment.apiUrl}/gallery/file/${id}`;
+  }
+
   formatBytes(bytes?: number, decimals = 2) {
     if (!bytes) return '0 Bytes';
     const k = 1024;

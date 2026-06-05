@@ -228,5 +228,18 @@ namespace Phantomhive.Infrastructure.Services
                 await request.ExecuteAsync();
             }
         }
+
+        public async Task<(Stream Stream, string ContentType, string FileName)> DownloadFileAsync(string fileId)
+        {
+            var getRequest = _driveService.Files.Get(fileId);
+            getRequest.Fields = "name, mimeType";
+            var file = await getRequest.ExecuteAsync();
+
+            var stream = new MemoryStream();
+            await getRequest.DownloadAsync(stream);
+            stream.Position = 0;
+
+            return (stream, file.MimeType, file.Name);
+        }
     }
 }
