@@ -42,5 +42,6 @@ jobs:
           region: asia-southeast1
           image: asia-southeast1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/phantomhive/backend:${{ github.sha }}
           service_account: gdrive@fenrisulfr42.iam.gserviceaccount.com
+          flags: --allow-unauthenticated
           env_vars: |
             ConnectionStrings__DefaultConnection=${{ secrets.POSTGRES_CONNECTION_STRING }}
