@@ -43,6 +43,12 @@ testem.log
 .client-secret.json
 backend/src/WebApi/google-credentials.json
 
+graphify-out/
+.graphify*
+/graph.json
+/GRAPH_REPORT.md
+/graph.html
+
 # System files
 .DS_Store
 Thumbs.db
