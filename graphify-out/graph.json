@@ -106,7 +106,7 @@
       "label": "GalleryComponent",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L13",
+      "source_location": "L14",
       "id": "gallery_gallery_component_gallerycomponent",
       "community": 0,
       "norm_label": "gallerycomponent"
@@ -115,7 +115,7 @@
       "label": ".ngOnInit()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L58",
+      "source_location": "L59",
       "id": "gallery_gallery_component_gallerycomponent_ngoninit",
       "community": 0,
       "norm_label": ".ngoninit()"
@@ -124,7 +124,7 @@
       "label": ".loadFolderContents()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L63",
+      "source_location": "L64",
       "id": "gallery_gallery_component_gallerycomponent_loadfoldercontents",
       "community": 0,
       "norm_label": ".loadfoldercontents()"
@@ -133,7 +133,7 @@
       "label": ".enterFolder()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L79",
+      "source_location": "L80",
       "id": "gallery_gallery_component_gallerycomponent_enterfolder",
       "community": 0,
       "norm_label": ".enterfolder()"
@@ -142,7 +142,7 @@
       "label": ".navigateToBreadcrumb()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L86",
+      "source_location": "L87",
       "id": "gallery_gallery_component_gallerycomponent_navigatetobreadcrumb",
       "community": 0,
       "norm_label": ".navigatetobreadcrumb()"
@@ -151,7 +151,7 @@
       "label": ".toggleSelectAll()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L95",
+      "source_location": "L96",
       "id": "gallery_gallery_component_gallerycomponent_toggleselectall",
       "community": 0,
       "norm_label": ".toggleselectall()"
@@ -160,7 +160,7 @@
       "label": ".toggleSelectItem()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L104",
+      "source_location": "L105",
       "id": "gallery_gallery_component_gallerycomponent_toggleselectitem",
       "community": 0,
       "norm_label": ".toggleselectitem()"
@@ -169,7 +169,7 @@
       "label": ".clearSelection()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L115",
+      "source_location": "L116",
       "id": "gallery_gallery_component_gallerycomponent_clearselection",
       "community": 0,
       "norm_label": ".clearselection()"
@@ -178,7 +178,7 @@
       "label": ".triggerFileInput()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L120",
+      "source_location": "L121",
       "id": "gallery_gallery_component_gallerycomponent_triggerfileinput",
       "community": 0,
       "norm_label": ".triggerfileinput()"
@@ -187,7 +187,7 @@
       "label": ".onFileSelected()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L124",
+      "source_location": "L125",
       "id": "gallery_gallery_component_gallerycomponent_onfileselected",
       "community": 0,
       "norm_label": ".onfileselected()"
@@ -196,7 +196,7 @@
       "label": ".openCreateFolderModal()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L144",
+      "source_location": "L145",
       "id": "gallery_gallery_component_gallerycomponent_opencreatefoldermodal",
       "community": 0,
       "norm_label": ".opencreatefoldermodal()"
@@ -205,7 +205,7 @@
       "label": ".submitCreateFolder()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L149",
+      "source_location": "L150",
       "id": "gallery_gallery_component_gallerycomponent_submitcreatefolder",
       "community": 0,
       "norm_label": ".submitcreatefolder()"
@@ -214,7 +214,7 @@
       "label": ".openRenameModal()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L166",
+      "source_location": "L167",
       "id": "gallery_gallery_component_gallerycomponent_openrenamemodal",
       "community": 0,
       "norm_label": ".openrenamemodal()"
@@ -223,7 +223,7 @@
       "label": ".submitRename()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L173",
+      "source_location": "L174",
       "id": "gallery_gallery_component_gallerycomponent_submitrename",
       "community": 0,
       "norm_label": ".submitrename()"
@@ -232,7 +232,7 @@
       "label": ".deleteItem()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L195",
+      "source_location": "L196",
       "id": "gallery_gallery_component_gallerycomponent_deleteitem",
       "community": 0,
       "norm_label": ".deleteitem()"
@@ -241,7 +241,7 @@
       "label": ".deleteSelected()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L212",
+      "source_location": "L213",
       "id": "gallery_gallery_component_gallerycomponent_deleteselected",
       "community": 0,
       "norm_label": ".deleteselected()"
@@ -250,7 +250,7 @@
       "label": ".openMoveModal()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L232",
+      "source_location": "L233",
       "id": "gallery_gallery_component_gallerycomponent_openmovemodal",
       "community": 0,
       "norm_label": ".openmovemodal()"
@@ -259,7 +259,7 @@
       "label": ".loadMoveExplorerFolder()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L243",
+      "source_location": "L244",
       "id": "gallery_gallery_component_gallerycomponent_loadmoveexplorerfolder",
       "community": 0,
       "norm_label": ".loadmoveexplorerfolder()"
@@ -268,7 +268,7 @@
       "label": ".navigateMoveExplorer()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L266",
+      "source_location": "L267",
       "id": "gallery_gallery_component_gallerycomponent_navigatemoveexplorer",
       "community": 0,
       "norm_label": ".navigatemoveexplorer()"
@@ -277,7 +277,7 @@
       "label": ".navigateMoveExplorerBreadcrumb()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L272",
+      "source_location": "L273",
       "id": "gallery_gallery_component_gallerycomponent_navigatemoveexplorerbreadcrumb",
       "community": 0,
       "norm_label": ".navigatemoveexplorerbreadcrumb()"
@@ -286,7 +286,7 @@
       "label": ".submitMove()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L279",
+      "source_location": "L280",
       "id": "gallery_gallery_component_gallerycomponent_submitmove",
       "community": 0,
       "norm_label": ".submitmove()"
@@ -295,7 +295,7 @@
       "label": ".openLightbox()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L314",
+      "source_location": "L315",
       "id": "gallery_gallery_component_gallerycomponent_openlightbox",
       "community": 0,
       "norm_label": ".openlightbox()"
@@ -304,7 +304,7 @@
       "label": ".closeLightbox()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L322",
+      "source_location": "L323",
       "id": "gallery_gallery_component_gallerycomponent_closelightbox",
       "community": 0,
       "norm_label": ".closelightbox()"
@@ -313,7 +313,7 @@
       "label": ".nextImage()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L326",
+      "source_location": "L327",
       "id": "gallery_gallery_component_gallerycomponent_nextimage",
       "community": 0,
       "norm_label": ".nextimage()"
@@ -322,7 +322,7 @@
       "label": ".prevImage()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L332",
+      "source_location": "L333",
       "id": "gallery_gallery_component_gallerycomponent_previmage",
       "community": 0,
       "norm_label": ".previmage()"
@@ -331,16 +331,25 @@
       "label": ".handleKeyboardEvent()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L340",
+      "source_location": "L341",
       "id": "gallery_gallery_component_gallerycomponent_handlekeyboardevent",
       "community": 0,
       "norm_label": ".handlekeyboardevent()"
     },
     {
+      "label": ".getImageUrl()",
+      "file_type": "code",
+      "source_file": "angular/src/app/features/gallery/gallery.component.ts",
+      "source_location": "L354",
+      "id": "gallery_gallery_component_gallerycomponent_getimageurl",
+      "community": 0,
+      "norm_label": ".getimageurl()"
+    },
+    {
       "label": ".formatBytes()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
-      "source_location": "L353",
+      "source_location": "L358",
       "id": "gallery_gallery_component_gallerycomponent_formatbytes",
       "community": 0,
       "norm_label": ".formatbytes()"
@@ -358,7 +367,7 @@
       "label": "GalleryService",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
-      "source_location": "L20",
+      "source_location": "L21",
       "id": "gallery_gallery_service_galleryservice",
       "community": 6,
       "norm_label": "galleryservice"
@@ -367,7 +376,7 @@
       "label": ".listFolder()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
-      "source_location": "L24",
+      "source_location": "L25",
       "id": "gallery_gallery_service_galleryservice_listfolder",
       "community": 6,
       "norm_label": ".listfolder()"
@@ -376,7 +385,7 @@
       "label": ".createFolder()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
-      "source_location": "L29",
+      "source_location": "L30",
       "id": "gallery_gallery_service_galleryservice_createfolder",
       "community": 6,
       "norm_label": ".createfolder()"
@@ -385,7 +394,7 @@
       "label": ".uploadFile()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
-      "source_location": "L36",
+      "source_location": "L37",
       "id": "gallery_gallery_service_galleryservice_uploadfile",
       "community": 6,
       "norm_label": ".uploadfile()"
@@ -394,7 +403,7 @@
       "label": ".renameItem()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
-      "source_location": "L45",
+      "source_location": "L46",
       "id": "gallery_gallery_service_galleryservice_renameitem",
       "community": 6,
       "norm_label": ".renameitem()"
@@ -403,7 +412,7 @@
       "label": ".moveItems()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
-      "source_location": "L51",
+      "source_location": "L52",
       "id": "gallery_gallery_service_galleryservice_moveitems",
       "community": 6,
       "norm_label": ".moveitems()"
@@ -412,7 +421,7 @@
       "label": ".deleteItems()",
       "file_type": "code",
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
-      "source_location": "L58",
+      "source_location": "L59",
       "id": "gallery_gallery_service_galleryservice_deleteitems",
       "community": 6,
       "norm_label": ".deleteitems()"
@@ -484,7 +493,7 @@
       "label": "AuthService",
       "file_type": "code",
       "source_file": "angular/src/app/#core/auth/auth.service.ts",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "auth_auth_service_authservice",
       "community": 5,
       "norm_label": "authservice"
@@ -493,7 +502,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "angular/src/app/#core/auth/auth.service.ts",
-      "source_location": "L29",
+      "source_location": "L30",
       "id": "auth_auth_service_authservice_constructor",
       "community": 5,
       "norm_label": ".constructor()"
@@ -502,7 +511,7 @@
       "label": ".login()",
       "file_type": "code",
       "source_file": "angular/src/app/#core/auth/auth.service.ts",
-      "source_location": "L52",
+      "source_location": "L53",
       "id": "auth_auth_service_authservice_login",
       "community": 5,
       "norm_label": ".login()"
@@ -511,7 +520,7 @@
       "label": ".exchangeSsoToken()",
       "file_type": "code",
       "source_file": "angular/src/app/#core/auth/auth.service.ts",
-      "source_location": "L67",
+      "source_location": "L68",
       "id": "auth_auth_service_authservice_exchangessotoken",
       "community": 5,
       "norm_label": ".exchangessotoken()"
@@ -520,7 +529,7 @@
       "label": ".logout()",
       "file_type": "code",
       "source_file": "angular/src/app/#core/auth/auth.service.ts",
-      "source_location": "L87",
+      "source_location": "L88",
       "id": "auth_auth_service_authservice_logout",
       "community": 5,
       "norm_label": ".logout()"
@@ -529,7 +538,7 @@
       "label": ".isAuthenticated()",
       "file_type": "code",
       "source_file": "angular/src/app/#core/auth/auth.service.ts",
-      "source_location": "L98",
+      "source_location": "L99",
       "id": "auth_auth_service_authservice_isauthenticated",
       "community": 5,
       "norm_label": ".isauthenticated()"
@@ -1268,7 +1277,7 @@
       "file_type": "code",
       "source_file": "angular/src/environments/environment.ts",
       "source_location": "L1",
-      "id": "users_victortan_repos_phantomhive_src_environments_environment_ts",
+      "id": "angular_src_environments_environment_ts",
       "community": 44,
       "norm_label": "environment.ts"
     },
@@ -1277,7 +1286,7 @@
       "file_type": "code",
       "source_file": "angular/src/environments/environment.development.ts",
       "source_location": "L1",
-      "id": "users_victortan_repos_phantomhive_src_environments_environment_development_ts",
+      "id": "angular_src_environments_environment_development_ts",
       "community": 45,
       "norm_label": "environment.development.ts"
     },
@@ -1669,10 +1678,19 @@
       "norm_label": ".deleteitemsasync()"
     },
     {
+      "label": ".DownloadFileAsync()",
+      "file_type": "code",
+      "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
+      "source_location": "L15",
+      "id": "interfaces_igoogledriveservice_igoogledriveservice_downloadfileasync",
+      "community": 4,
+      "norm_label": ".downloadfileasync()"
+    },
+    {
       "label": "GoogleDriveItemDto",
       "file_type": "code",
       "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "interfaces_igoogledriveservice_googledriveitemdto",
       "community": 4,
       "norm_label": "googledriveitemdto"
@@ -1752,7 +1770,7 @@
     {
       "label": "IGoogleDriveService",
       "file_type": "code",
-      "source_file": "",
+      "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
       "source_location": "",
       "id": "igoogledriveservice",
       "community": 2,
@@ -1768,10 +1786,19 @@
       "norm_label": ".listfolder()"
     },
     {
-      "label": ".CreateFolder()",
+      "label": ".DownloadFile()",
       "file_type": "code",
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L35",
+      "id": "controllers_googledrivecontroller_googledrivecontroller_downloadfile",
+      "community": 2,
+      "norm_label": ".downloadfile()"
+    },
+    {
+      "label": ".CreateFolder()",
+      "file_type": "code",
+      "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
+      "source_location": "L49",
       "id": "controllers_googledrivecontroller_googledrivecontroller_createfolder",
       "community": 2,
       "norm_label": ".createfolder()"
@@ -1780,7 +1807,7 @@
       "label": ".UploadFile()",
       "file_type": "code",
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
-      "source_location": "L54",
+      "source_location": "L68",
       "id": "controllers_googledrivecontroller_googledrivecontroller_uploadfile",
       "community": 2,
       "norm_label": ".uploadfile()"
@@ -1789,7 +1816,7 @@
       "label": ".RenameItem()",
       "file_type": "code",
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
-      "source_location": "L76",
+      "source_location": "L90",
       "id": "controllers_googledrivecontroller_googledrivecontroller_renameitem",
       "community": 2,
       "norm_label": ".renameitem()"
@@ -1798,7 +1825,7 @@
       "label": ".MoveItems()",
       "file_type": "code",
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
-      "source_location": "L95",
+      "source_location": "L109",
       "id": "controllers_googledrivecontroller_googledrivecontroller_moveitems",
       "community": 2,
       "norm_label": ".moveitems()"
@@ -1807,7 +1834,7 @@
       "label": ".DeleteItems()",
       "file_type": "code",
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
-      "source_location": "L114",
+      "source_location": "L128",
       "id": "controllers_googledrivecontroller_googledrivecontroller_deleteitems",
       "community": 2,
       "norm_label": ".deleteitems()"
@@ -1816,7 +1843,7 @@
       "label": "CreateFolderRequest",
       "file_type": "code",
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
-      "source_location": "L134",
+      "source_location": "L148",
       "id": "controllers_googledrivecontroller_createfolderrequest",
       "community": 2,
       "norm_label": "createfolderrequest"
@@ -1825,7 +1852,7 @@
       "label": "RenameRequest",
       "file_type": "code",
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
-      "source_location": "L140",
+      "source_location": "L154",
       "id": "controllers_googledrivecontroller_renamerequest",
       "community": 2,
       "norm_label": "renamerequest"
@@ -1834,7 +1861,7 @@
       "label": "MoveBatchRequest",
       "file_type": "code",
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
-      "source_location": "L145",
+      "source_location": "L159",
       "id": "controllers_googledrivecontroller_movebatchrequest",
       "community": 2,
       "norm_label": "movebatchrequest"
@@ -1843,7 +1870,7 @@
       "label": "DeleteBatchRequest",
       "file_type": "code",
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
-      "source_location": "L151",
+      "source_location": "L165",
       "id": "controllers_googledrivecontroller_deletebatchrequest",
       "community": 2,
       "norm_label": "deletebatchrequest"
@@ -2032,7 +2059,7 @@
       "label": ".ListFolderAsync()",
       "file_type": "code",
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
-      "source_location": "L61",
+      "source_location": "L67",
       "id": "services_googledriveservice_googledriveservice_listfolderasync",
       "community": 3,
       "norm_label": ".listfolderasync()"
@@ -2041,7 +2068,7 @@
       "label": ".CreateFolderAsync()",
       "file_type": "code",
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
-      "source_location": "L87",
+      "source_location": "L93",
       "id": "services_googledriveservice_googledriveservice_createfolderasync",
       "community": 3,
       "norm_label": ".createfolderasync()"
@@ -2050,7 +2077,7 @@
       "label": ".UploadFileAsync()",
       "file_type": "code",
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
-      "source_location": "L111",
+      "source_location": "L117",
       "id": "services_googledriveservice_googledriveservice_uploadfileasync",
       "community": 3,
       "norm_label": ".uploadfileasync()"
@@ -2059,7 +2086,7 @@
       "label": ".RenameItemAsync()",
       "file_type": "code",
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
-      "source_location": "L149",
+      "source_location": "L155",
       "id": "services_googledriveservice_googledriveservice_renameitemasync",
       "community": 3,
       "norm_label": ".renameitemasync()"
@@ -2068,7 +2095,7 @@
       "label": ".MoveItemsAsync()",
       "file_type": "code",
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
-      "source_location": "L174",
+      "source_location": "L180",
       "id": "services_googledriveservice_googledriveservice_moveitemsasync",
       "community": 3,
       "norm_label": ".moveitemsasync()"
@@ -2077,10 +2104,19 @@
       "label": ".DeleteItemsAsync()",
       "file_type": "code",
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
-      "source_location": "L212",
+      "source_location": "L218",
       "id": "services_googledriveservice_googledriveservice_deleteitemsasync",
       "community": 3,
       "norm_label": ".deleteitemsasync()"
+    },
+    {
+      "label": ".DownloadFileAsync()",
+      "file_type": "code",
+      "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
+      "source_location": "L232",
+      "id": "services_googledriveservice_googledriveservice_downloadfileasync",
+      "community": 3,
+      "norm_label": ".downloadfileasync()"
     },
     {
       "label": "Phantomhive.Domain.AssemblyInfo.cs",
@@ -2119,11 +2155,29 @@
       "norm_label": "user"
     },
     {
+      "label": "environment.ts",
+      "file_type": "code",
+      "source_file": "angular/src/environments/environment.ts",
+      "source_location": "L1",
+      "community": 54,
+      "norm_label": "environment.ts",
+      "id": "users_victortan_repos_phantomhive_src_environments_environment_ts"
+    },
+    {
+      "label": "environment.development.ts",
+      "file_type": "code",
+      "source_file": "angular/src/environments/environment.development.ts",
+      "source_location": "L1",
+      "community": 55,
+      "norm_label": "environment.development.ts",
+      "id": "users_victortan_repos_phantomhive_src_environments_environment_development_ts"
+    },
+    {
       "label": "app.routes.ts",
       "file_type": "code",
       "source_file": "angular/src/app/app.routes.ts",
       "source_location": "L1",
-      "community": 54,
+      "community": 56,
       "norm_label": "app.routes.ts",
       "id": "users_victortan_repos_phantomhive_src_app_app_routes_ts"
     },
@@ -2195,7 +2249,7 @@
       "file_type": "code",
       "source_file": "main.ts",
       "source_location": "L1",
-      "community": 55,
+      "community": 57,
       "norm_label": "main.ts",
       "id": "main_ts"
     },
@@ -2204,7 +2258,7 @@
       "file_type": "code",
       "source_file": "app/app.routes.ts",
       "source_location": "L1",
-      "community": 56,
+      "community": 58,
       "norm_label": "app.routes.ts",
       "id": "app_app_routes_ts"
     },
@@ -2213,7 +2267,7 @@
       "file_type": "code",
       "source_file": "app/app.component.spec.ts",
       "source_location": "L1",
-      "community": 57,
+      "community": 59,
       "norm_label": "app.component.spec.ts",
       "id": "app_app_component_spec_ts"
     },
@@ -2231,7 +2285,7 @@
       "file_type": "code",
       "source_file": "app/app.config.ts",
       "source_location": "L1",
-      "community": 58,
+      "community": 60,
       "norm_label": "app.config.ts",
       "id": "app_app_config_ts"
     },
@@ -2456,7 +2510,7 @@
       "file_type": "code",
       "source_file": "environments/environment.ts",
       "source_location": "L1",
-      "community": 59,
+      "community": 61,
       "norm_label": "environment.ts",
       "id": "environments_environment_ts"
     },
@@ -2465,7 +2519,7 @@
       "file_type": "code",
       "source_file": "environments/environment.development.ts",
       "source_location": "L1",
-      "community": 60,
+      "community": 62,
       "norm_label": "environment.development.ts",
       "id": "environments_environment_development_ts"
     }
@@ -2537,9 +2591,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "angular_src_app_features_gallery_gallery_component_ts",
-      "target": "gallery_gallery_component_gallerycomponent",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent"
     },
     {
       "relation": "method",
@@ -2547,9 +2601,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_ngoninit",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_ngoninit"
     },
     {
       "relation": "method",
@@ -2557,9 +2611,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_loadfoldercontents",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_loadfoldercontents"
     },
     {
       "relation": "method",
@@ -2567,9 +2621,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_enterfolder",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_enterfolder"
     },
     {
       "relation": "method",
@@ -2577,9 +2631,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_navigatetobreadcrumb",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_navigatetobreadcrumb"
     },
     {
       "relation": "method",
@@ -2587,9 +2641,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_toggleselectall",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_toggleselectall"
     },
     {
       "relation": "method",
@@ -2597,9 +2651,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_toggleselectitem",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_toggleselectitem"
     },
     {
       "relation": "method",
@@ -2607,9 +2661,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_clearselection",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_clearselection"
     },
     {
       "relation": "method",
@@ -2617,9 +2671,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_triggerfileinput",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_triggerfileinput"
     },
     {
       "relation": "method",
@@ -2627,9 +2681,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_onfileselected",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_onfileselected"
     },
     {
       "relation": "method",
@@ -2637,9 +2691,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_opencreatefoldermodal",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_opencreatefoldermodal"
     },
     {
       "relation": "method",
@@ -2647,9 +2701,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_submitcreatefolder",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_submitcreatefolder"
     },
     {
       "relation": "method",
@@ -2657,9 +2711,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_openrenamemodal",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_openrenamemodal"
     },
     {
       "relation": "method",
@@ -2667,9 +2721,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_submitrename",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_submitrename"
     },
     {
       "relation": "method",
@@ -2677,9 +2731,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_deleteitem",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_deleteitem"
     },
     {
       "relation": "method",
@@ -2687,9 +2741,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L212",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_deleteselected",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_deleteselected"
     },
     {
       "relation": "method",
@@ -2697,9 +2751,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_openmovemodal",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_openmovemodal"
     },
     {
       "relation": "method",
@@ -2707,9 +2761,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L243",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_loadmoveexplorerfolder",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_loadmoveexplorerfolder"
     },
     {
       "relation": "method",
@@ -2717,9 +2771,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L266",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_navigatemoveexplorer",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_navigatemoveexplorer"
     },
     {
       "relation": "method",
@@ -2727,9 +2781,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L272",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_navigatemoveexplorerbreadcrumb",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_navigatemoveexplorerbreadcrumb"
     },
     {
       "relation": "method",
@@ -2737,9 +2791,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L279",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_submitmove",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_submitmove"
     },
     {
       "relation": "method",
@@ -2747,9 +2801,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L314",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_openlightbox",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_openlightbox"
     },
     {
       "relation": "method",
@@ -2757,9 +2811,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L322",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_closelightbox",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_closelightbox"
     },
     {
       "relation": "method",
@@ -2767,9 +2821,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L326",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_nextimage",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_nextimage"
     },
     {
       "relation": "method",
@@ -2777,9 +2831,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L332",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_previmage",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_previmage"
     },
     {
       "relation": "method",
@@ -2787,9 +2841,19 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L340",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_handlekeyboardevent",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_handlekeyboardevent"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "angular/src/app/features/gallery/gallery.component.ts",
+      "source_location": "L354",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gallery_gallery_component_gallerycomponent",
+      "target": "gallery_gallery_component_gallerycomponent_getimageurl"
     },
     {
       "relation": "method",
@@ -2797,9 +2861,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L353",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent",
-      "target": "gallery_gallery_component_gallerycomponent_formatbytes",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_formatbytes"
     },
     {
       "relation": "calls",
@@ -2808,9 +2872,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_ngoninit",
-      "target": "gallery_gallery_component_gallerycomponent_loadfoldercontents",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_loadfoldercontents"
     },
     {
       "relation": "calls",
@@ -2819,9 +2883,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_enterfolder",
-      "target": "gallery_gallery_component_gallerycomponent_loadfoldercontents",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_loadfoldercontents"
     },
     {
       "relation": "calls",
@@ -2830,9 +2894,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_navigatetobreadcrumb",
-      "target": "gallery_gallery_component_gallerycomponent_loadfoldercontents",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_loadfoldercontents"
     },
     {
       "relation": "calls",
@@ -2841,9 +2905,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_enterfolder",
-      "target": "gallery_gallery_component_gallerycomponent_clearselection",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_clearselection"
     },
     {
       "relation": "calls",
@@ -2852,9 +2916,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_navigatetobreadcrumb",
-      "target": "gallery_gallery_component_gallerycomponent_clearselection",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_clearselection"
     },
     {
       "relation": "calls",
@@ -2863,9 +2927,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_toggleselectall",
-      "target": "gallery_gallery_component_gallerycomponent_clearselection",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_clearselection"
     },
     {
       "relation": "calls",
@@ -2874,9 +2938,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L240",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_openmovemodal",
-      "target": "gallery_gallery_component_gallerycomponent_loadmoveexplorerfolder",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_loadmoveexplorerfolder"
     },
     {
       "relation": "calls",
@@ -2885,9 +2949,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L269",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_navigatemoveexplorer",
-      "target": "gallery_gallery_component_gallerycomponent_loadmoveexplorerfolder",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_loadmoveexplorerfolder"
     },
     {
       "relation": "calls",
@@ -2896,9 +2960,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L276",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_navigatemoveexplorerbreadcrumb",
-      "target": "gallery_gallery_component_gallerycomponent_loadmoveexplorerfolder",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_loadmoveexplorerfolder"
     },
     {
       "relation": "calls",
@@ -2907,9 +2971,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L347",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_handlekeyboardevent",
-      "target": "gallery_gallery_component_gallerycomponent_closelightbox",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_closelightbox"
     },
     {
       "relation": "calls",
@@ -2918,9 +2982,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L345",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_handlekeyboardevent",
-      "target": "gallery_gallery_component_gallerycomponent_nextimage",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_nextimage"
     },
     {
       "relation": "calls",
@@ -2929,9 +2993,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.component.ts",
       "source_location": "L343",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_component_gallerycomponent_handlekeyboardevent",
-      "target": "gallery_gallery_component_gallerycomponent_previmage",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_component_gallerycomponent_previmage"
     },
     {
       "relation": "contains",
@@ -2939,9 +3003,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "angular_src_app_features_gallery_gallery_service_ts",
-      "target": "gallery_gallery_service_galleryservice",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_service_galleryservice"
     },
     {
       "relation": "method",
@@ -2949,9 +3013,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_service_galleryservice",
-      "target": "gallery_gallery_service_galleryservice_listfolder",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_service_galleryservice_listfolder"
     },
     {
       "relation": "method",
@@ -2959,9 +3023,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_service_galleryservice",
-      "target": "gallery_gallery_service_galleryservice_createfolder",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_service_galleryservice_createfolder"
     },
     {
       "relation": "method",
@@ -2969,9 +3033,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_service_galleryservice",
-      "target": "gallery_gallery_service_galleryservice_uploadfile",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_service_galleryservice_uploadfile"
     },
     {
       "relation": "method",
@@ -2979,9 +3043,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_service_galleryservice",
-      "target": "gallery_gallery_service_galleryservice_renameitem",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_service_galleryservice_renameitem"
     },
     {
       "relation": "method",
@@ -2989,9 +3053,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_service_galleryservice",
-      "target": "gallery_gallery_service_galleryservice_moveitems",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_service_galleryservice_moveitems"
     },
     {
       "relation": "method",
@@ -2999,9 +3063,9 @@
       "source_file": "angular/src/app/features/gallery/gallery.service.ts",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gallery_gallery_service_galleryservice",
-      "target": "gallery_gallery_service_galleryservice_deleteitems",
-      "confidence_score": 1.0
+      "target": "gallery_gallery_service_galleryservice_deleteitems"
     },
     {
       "relation": "contains",
@@ -3259,9 +3323,9 @@
       "source_file": "angular/src/app/#core/auth/single-sign-on/twitter/twitter-sso.service.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "angular_src_app_core_auth_single_sign_on_twitter_twitter_sso_service_ts",
-      "target": "twitter_twitter_sso_service_twitterssoservice",
-      "confidence_score": 1.0
+      "target": "twitter_twitter_sso_service_twitterssoservice"
     },
     {
       "relation": "method",
@@ -3389,9 +3453,9 @@
       "source_file": "angular/src/app/#core/auth/single-sign-on/google/google-sso.service.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "angular_src_app_core_auth_single_sign_on_google_google_sso_service_ts",
-      "target": "google_google_sso_service_googlessoservice",
-      "confidence_score": 1.0
+      "target": "google_google_sso_service_googlessoservice"
     },
     {
       "relation": "method",
@@ -3479,9 +3543,9 @@
       "source_file": "angular/src/app/#core/auth/single-sign-on/github/github-sso.service.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "angular_src_app_core_auth_single_sign_on_github_github_sso_service_ts",
-      "target": "github_github_sso_service_githubssoservice",
-      "confidence_score": 1.0
+      "target": "github_github_sso_service_githubssoservice"
     },
     {
       "relation": "method",
@@ -3579,9 +3643,9 @@
       "source_file": "angular/src/app/#core/auth/single-sign-on/facebook/facebook-sso.service.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "angular_src_app_core_auth_single_sign_on_facebook_facebook_sso_service_ts",
-      "target": "facebook_facebook_sso_service_facebookssoservice",
-      "confidence_score": 1.0
+      "target": "facebook_facebook_sso_service_facebookssoservice"
     },
     {
       "relation": "method",
@@ -4306,9 +4370,9 @@
       "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_application_common_interfaces_igoogledriveservice_cs",
-      "target": "interfaces_igoogledriveservice_phantomhive_application_common_interfaces",
-      "confidence_score": 1.0
+      "target": "interfaces_igoogledriveservice_phantomhive_application_common_interfaces"
     },
     {
       "relation": "contains",
@@ -4316,9 +4380,9 @@
       "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_application_common_interfaces_igoogledriveservice_cs",
-      "target": "interfaces_igoogledriveservice_igoogledriveservice",
-      "confidence_score": 1.0
+      "target": "interfaces_igoogledriveservice_igoogledriveservice"
     },
     {
       "relation": "contains",
@@ -4326,9 +4390,9 @@
       "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_application_common_interfaces_igoogledriveservice_cs",
-      "target": "interfaces_igoogledriveservice_googledriveitemdto",
-      "confidence_score": 1.0
+      "target": "interfaces_igoogledriveservice_googledriveitemdto"
     },
     {
       "relation": "method",
@@ -4336,9 +4400,9 @@
       "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "interfaces_igoogledriveservice_igoogledriveservice",
-      "target": "interfaces_igoogledriveservice_igoogledriveservice_listfolderasync",
-      "confidence_score": 1.0
+      "target": "interfaces_igoogledriveservice_igoogledriveservice_listfolderasync"
     },
     {
       "relation": "method",
@@ -4346,9 +4410,9 @@
       "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "interfaces_igoogledriveservice_igoogledriveservice",
-      "target": "interfaces_igoogledriveservice_igoogledriveservice_createfolderasync",
-      "confidence_score": 1.0
+      "target": "interfaces_igoogledriveservice_igoogledriveservice_createfolderasync"
     },
     {
       "relation": "method",
@@ -4356,9 +4420,9 @@
       "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "interfaces_igoogledriveservice_igoogledriveservice",
-      "target": "interfaces_igoogledriveservice_igoogledriveservice_uploadfileasync",
-      "confidence_score": 1.0
+      "target": "interfaces_igoogledriveservice_igoogledriveservice_uploadfileasync"
     },
     {
       "relation": "method",
@@ -4366,9 +4430,9 @@
       "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "interfaces_igoogledriveservice_igoogledriveservice",
-      "target": "interfaces_igoogledriveservice_igoogledriveservice_renameitemasync",
-      "confidence_score": 1.0
+      "target": "interfaces_igoogledriveservice_igoogledriveservice_renameitemasync"
     },
     {
       "relation": "method",
@@ -4376,9 +4440,9 @@
       "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "interfaces_igoogledriveservice_igoogledriveservice",
-      "target": "interfaces_igoogledriveservice_igoogledriveservice_moveitemsasync",
-      "confidence_score": 1.0
+      "target": "interfaces_igoogledriveservice_igoogledriveservice_moveitemsasync"
     },
     {
       "relation": "method",
@@ -4386,9 +4450,19 @@
       "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "interfaces_igoogledriveservice_igoogledriveservice",
-      "target": "interfaces_igoogledriveservice_igoogledriveservice_deleteitemsasync",
-      "confidence_score": 1.0
+      "target": "interfaces_igoogledriveservice_igoogledriveservice_deleteitemsasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/Application/Common/Interfaces/IGoogleDriveService.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "interfaces_igoogledriveservice_igoogledriveservice",
+      "target": "interfaces_igoogledriveservice_igoogledriveservice_downloadfileasync"
     },
     {
       "relation": "contains",
@@ -4396,9 +4470,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_webapi_controllers_googledrivecontroller_cs",
-      "target": "controllers_googledrivecontroller_phantomhive_webapi_controllers",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_phantomhive_webapi_controllers"
     },
     {
       "relation": "contains",
@@ -4406,9 +4480,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_webapi_controllers_googledrivecontroller_cs",
-      "target": "controllers_googledrivecontroller_googledrivecontroller",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_googledrivecontroller"
     },
     {
       "relation": "contains",
@@ -4416,9 +4490,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_webapi_controllers_googledrivecontroller_cs",
-      "target": "controllers_googledrivecontroller_createfolderrequest",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_createfolderrequest"
     },
     {
       "relation": "contains",
@@ -4426,9 +4500,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_webapi_controllers_googledrivecontroller_cs",
-      "target": "controllers_googledrivecontroller_renamerequest",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_renamerequest"
     },
     {
       "relation": "contains",
@@ -4436,9 +4510,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_webapi_controllers_googledrivecontroller_cs",
-      "target": "controllers_googledrivecontroller_movebatchrequest",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_movebatchrequest"
     },
     {
       "relation": "contains",
@@ -4446,9 +4520,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_webapi_controllers_googledrivecontroller_cs",
-      "target": "controllers_googledrivecontroller_deletebatchrequest",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_deletebatchrequest"
     },
     {
       "relation": "inherits",
@@ -4456,9 +4530,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_googledrivecontroller_googledrivecontroller",
-      "target": "controllerbase",
-      "confidence_score": 1.0
+      "target": "controllerbase"
     },
     {
       "relation": "references",
@@ -4467,9 +4541,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "controllers_googledrivecontroller_googledrivecontroller",
-      "target": "igoogledriveservice",
-      "confidence_score": 1.0
+      "target": "igoogledriveservice"
     },
     {
       "relation": "method",
@@ -4477,9 +4551,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_googledrivecontroller_googledrivecontroller",
-      "target": "controllers_googledrivecontroller_googledrivecontroller_listfolder",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_googledrivecontroller_listfolder"
     },
     {
       "relation": "method",
@@ -4487,9 +4561,19 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_googledrivecontroller_googledrivecontroller",
-      "target": "controllers_googledrivecontroller_googledrivecontroller_createfolder",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_googledrivecontroller_downloadfile"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_googledrivecontroller_googledrivecontroller",
+      "target": "controllers_googledrivecontroller_googledrivecontroller_createfolder"
     },
     {
       "relation": "method",
@@ -4497,9 +4581,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_googledrivecontroller_googledrivecontroller",
-      "target": "controllers_googledrivecontroller_googledrivecontroller_uploadfile",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_googledrivecontroller_uploadfile"
     },
     {
       "relation": "method",
@@ -4507,9 +4591,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_googledrivecontroller_googledrivecontroller",
-      "target": "controllers_googledrivecontroller_googledrivecontroller_renameitem",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_googledrivecontroller_renameitem"
     },
     {
       "relation": "method",
@@ -4517,9 +4601,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_googledrivecontroller_googledrivecontroller",
-      "target": "controllers_googledrivecontroller_googledrivecontroller_moveitems",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_googledrivecontroller_moveitems"
     },
     {
       "relation": "method",
@@ -4527,9 +4611,9 @@
       "source_file": "backend/src/WebApi/Controllers/GoogleDriveController.cs",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_googledrivecontroller_googledrivecontroller",
-      "target": "controllers_googledrivecontroller_googledrivecontroller_deleteitems",
-      "confidence_score": 1.0
+      "target": "controllers_googledrivecontroller_googledrivecontroller_deleteitems"
     },
     {
       "relation": "inherits",
@@ -4547,9 +4631,9 @@
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_googledriveservice_googledriveservice",
-      "target": "igoogledriveservice",
-      "confidence_score": 1.0
+      "target": "igoogledriveservice"
     },
     {
       "relation": "contains",
@@ -4667,9 +4751,9 @@
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_infrastructure_services_googledriveservice_cs",
-      "target": "services_googledriveservice_phantomhive_infrastructure_services",
-      "confidence_score": 1.0
+      "target": "services_googledriveservice_phantomhive_infrastructure_services"
     },
     {
       "relation": "contains",
@@ -4677,9 +4761,9 @@
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_infrastructure_services_googledriveservice_cs",
-      "target": "services_googledriveservice_googledriveservice",
-      "confidence_score": 1.0
+      "target": "services_googledriveservice_googledriveservice"
     },
     {
       "relation": "references",
@@ -4688,9 +4772,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "services_googledriveservice_googledriveservice",
-      "target": "driveservice",
-      "confidence_score": 1.0
+      "target": "driveservice"
     },
     {
       "relation": "references",
@@ -4699,9 +4783,9 @@
       "source_location": "L18",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "services_googledriveservice_googledriveservice",
-      "target": "string",
-      "confidence_score": 1.0
+      "target": "string"
     },
     {
       "relation": "method",
@@ -4709,9 +4793,9 @@
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_googledriveservice_googledriveservice",
-      "target": "services_googledriveservice_googledriveservice_listfolderasync",
-      "confidence_score": 1.0
+      "target": "services_googledriveservice_googledriveservice_listfolderasync"
     },
     {
       "relation": "method",
@@ -4719,9 +4803,9 @@
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_googledriveservice_googledriveservice",
-      "target": "services_googledriveservice_googledriveservice_createfolderasync",
-      "confidence_score": 1.0
+      "target": "services_googledriveservice_googledriveservice_createfolderasync"
     },
     {
       "relation": "method",
@@ -4729,9 +4813,9 @@
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_googledriveservice_googledriveservice",
-      "target": "services_googledriveservice_googledriveservice_uploadfileasync",
-      "confidence_score": 1.0
+      "target": "services_googledriveservice_googledriveservice_uploadfileasync"
     },
     {
       "relation": "method",
@@ -4739,9 +4823,9 @@
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_googledriveservice_googledriveservice",
-      "target": "services_googledriveservice_googledriveservice_renameitemasync",
-      "confidence_score": 1.0
+      "target": "services_googledriveservice_googledriveservice_renameitemasync"
     },
     {
       "relation": "method",
@@ -4749,9 +4833,9 @@
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_googledriveservice_googledriveservice",
-      "target": "services_googledriveservice_googledriveservice_moveitemsasync",
-      "confidence_score": 1.0
+      "target": "services_googledriveservice_googledriveservice_moveitemsasync"
     },
     {
       "relation": "method",
@@ -4759,9 +4843,19 @@
       "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
       "source_location": "L212",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_googledriveservice_googledriveservice",
-      "target": "services_googledriveservice_googledriveservice_deleteitemsasync",
-      "confidence_score": 1.0
+      "target": "services_googledriveservice_googledriveservice_deleteitemsasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/Infrastructure/Services/GoogleDriveService.cs",
+      "source_location": "L232",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_googledriveservice_googledriveservice",
+      "target": "services_googledriveservice_googledriveservice_downloadfileasync"
     },
     {
       "relation": "contains",
@@ -4785,5 +4879,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e7f4d53e653ca0a4e7209ed35b39674e910e8bf0"
+  "built_at_commit": "d8806719ed42bf6d9e872d91dc4372462451a0c6"
 }

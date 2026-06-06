@@ -1,16 +1,16 @@
-# Graph Report - phantomhive  (2026-06-03)
+# Graph Report - phantomhive  (2026-06-06)
 
 ## Corpus Check
-- 58 files · ~62,251 words
+- 58 files · ~66,718 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 274 nodes · 229 edges · 41 communities detected
+- 280 nodes · 233 edges · 41 communities detected
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e7f4d53e`
+- Built from commit: `d8806719`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -58,16 +58,16 @@
 - [[_COMMUNITY_Community 46|Community 46]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `GalleryComponent` - 27 edges
-2. `GoogleDriveService` - 10 edges
-3. `GoogleDriveController` - 9 edges
+1. `GalleryComponent` - 28 edges
+2. `GoogleDriveService` - 11 edges
+3. `GoogleDriveController` - 10 edges
 4. `AuthService` - 8 edges
 5. `AuthService` - 8 edges
-6. `GalleryService` - 7 edges
-7. `SingleSignOnService` - 7 edges
-8. `TwitterSsoService` - 7 edges
-9. `GoogleSsoService` - 7 edges
-10. `GithubSsoService` - 7 edges
+6. `IGoogleDriveService` - 8 edges
+7. `GalleryService` - 7 edges
+8. `SingleSignOnService` - 7 edges
+9. `TwitterSsoService` - 7 edges
+10. `GoogleSsoService` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `GoogleDriveController` --inherits--> `ControllerBase`  [EXTRACTED]
@@ -76,23 +76,25 @@
   backend/src/Application/Auth/Services/AuthService.cs → backend/src/WebApi/Controllers/AuthController.cs
 - `AuthService` --references--> `IApplicationDbContext`  [EXTRACTED]
   backend/src/Application/Auth/Services/AuthService.cs → backend/src/Infrastructure/Persistence/ApplicationDbContext.cs
+- `GoogleDriveController` --references--> `IGoogleDriveService`  [EXTRACTED]
+  backend/src/WebApi/Controllers/GoogleDriveController.cs → backend/src/Infrastructure/Services/GoogleDriveService.cs
 
-## Communities (61 total, 37 thin omitted)
+## Communities (63 total, 37 thin omitted)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.1
 Nodes (13): ControllerBase, AuthController, Phantomhive.WebApi.Controllers, DbContext, IApplicationDbContext, IAuthService, IFirebaseTokenVerifier, IPasswordHasher (+5 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.14
+Cohesion: 0.13
 Nodes (7): CreateFolderRequest, DeleteBatchRequest, GoogleDriveController, MoveBatchRequest, Phantomhive.WebApi.Controllers, RenameRequest, IGoogleDriveService
 
 ### Community 3 - "Community 3"
-Cohesion: 0.18
+Cohesion: 0.17
 Nodes (4): DriveService, GoogleDriveService, Phantomhive.Infrastructure.Services, string
 
 ### Community 4 - "Community 4"
-Cohesion: 0.2
+Cohesion: 0.18
 Nodes (3): GoogleDriveItemDto, IGoogleDriveService, Phantomhive.Application.Common.Interfaces
 
 ## Knowledge Gaps
@@ -104,9 +106,9 @@ Nodes (3): GoogleDriveItemDto, IGoogleDriveService, Phantomhive.Application.Comm
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `GoogleDriveController` connect `Community 2` to `Community 1`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **Why does `ControllerBase` connect `Community 1` to `Community 2`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **What connects `Phantomhive.Application`, `Phantomhive.Application.GlobalUsings.g.cs`, `Phantomhive.Application.Auth.DTOs` to the rest of the system?**
   _30 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
@@ -114,4 +116,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.14 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.13 - nodes in this community are weakly interconnected._

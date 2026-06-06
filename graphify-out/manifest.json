@@ -1,142 +1,142 @@
 {
   "/Users/victortan/Repos/phantomhive/angular/src/main.ts": {
-    "mtime": 1764930186.6540518,
+    "mtime": 1780649616.8973112,
     "hash": "c986c915181c0d91d6ea1af9fc003131"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/app.routes.ts": {
-    "mtime": 1780388461.15484,
+    "mtime": 1780649616.8939726,
     "hash": "e6a0e3c5bd1c9cd2f3c6727776234087"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/app.component.spec.ts": {
-    "mtime": 1767411285.1333444,
+    "mtime": 1780649616.8936677,
     "hash": "61e70b0660bf52a50782b9bbd211e436"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/app.component.ts": {
-    "mtime": 1778322661.5321343,
+    "mtime": 1780649616.8937972,
     "hash": "d00549d0d096de753391b5039367c569"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/app.config.ts": {
-    "mtime": 1778426024.7495275,
+    "mtime": 1780649616.8938644,
     "hash": "12b264bef7076a477716cb5aaae7c0d2"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/features/home/home.component.ts": {
-    "mtime": 1767411285.1340928,
+    "mtime": 1780649616.8949332,
     "hash": "ceb969ef551968707e7b14d0e1cf47b2"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/features/gallery/gallery.component.ts": {
-    "mtime": 1780388396.7606075,
-    "hash": "1da617933c7a4d3120b4a522dd10144d"
+    "mtime": 1780666816.6529799,
+    "hash": "969c2d54ae7615aa348e7fec6bf898f7"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/features/gallery/gallery.service.ts": {
-    "mtime": 1780388382.8114603,
-    "hash": "55d84d3caea593a38f9bd601ba02d084"
+    "mtime": 1780649616.8948078,
+    "hash": "60a0eb01deb7331db43a9da4d9e10139"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/core.service.ts": {
-    "mtime": 1767411285.1315098,
+    "mtime": 1780649616.8910127,
     "hash": "e80067b6fd5cb70e19647833c84b1a64"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/core.module.ts": {
-    "mtime": 1778427258.8832877,
+    "mtime": 1780649616.8908958,
     "hash": "dc8e5f38a210de83fb47a4ff700669a2"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/auth.service.ts": {
-    "mtime": 1779950289.0514312,
-    "hash": "99890c1afa1aa26949e029680aa296e7"
+    "mtime": 1780649616.8882103,
+    "hash": "d607aee76669d2696428cd7c3b3c1eac"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/auth.guard.ts": {
-    "mtime": 1767411285.129759,
+    "mtime": 1780649616.8877738,
     "hash": "16bad2989edd542503b24e5f6dfa381a"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/single-sign-on/single-sign-on.service.ts": {
-    "mtime": 1778322661.5265942,
+    "mtime": 1780649616.890457,
     "hash": "602d53d022d11f2199f0a266ea9f7d8d"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/single-sign-on/single-sign-on.module.ts": {
-    "mtime": 1768023915.5278711,
+    "mtime": 1780649616.8903224,
     "hash": "e63080715816acbce9a1cc53ee1c5364"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/single-sign-on/twitter/twitter-sso.service.ts": {
-    "mtime": 1780485454.5693657,
+    "mtime": 1780649616.8907664,
     "hash": "8bc59f9ca1e44aa7cf3b9410d4b8d68c"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/single-sign-on/twitter/twitter-sso-button.component.ts": {
-    "mtime": 1778322661.526925,
+    "mtime": 1780649616.8906405,
     "hash": "09f507a916e0ac84005b899406bf962d"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/single-sign-on/google/google-sso-button.component.ts": {
-    "mtime": 1777937262.9629347,
+    "mtime": 1780649616.8900354,
     "hash": "285458c9fee0e4cc684c317700b470d1"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/single-sign-on/google/google-sso.service.ts": {
-    "mtime": 1780485439.3287485,
+    "mtime": 1780649616.8901858,
     "hash": "79743486233047cea6318d9e46728d09"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/single-sign-on/google/firebase.config.ts": {
-    "mtime": 1768023915.4513073,
+    "mtime": 1780649616.8899117,
     "hash": "3b62aa1e623e6c72e4262beba73fd4c6"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/single-sign-on/github/github-sso.service.ts": {
-    "mtime": 1780485449.047141,
+    "mtime": 1780649616.889566,
     "hash": "ccd60794a251504a17f3f1759475b21c"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/single-sign-on/github/github-sso-button.component.ts": {
-    "mtime": 1778322661.52626,
+    "mtime": 1780649616.8893936,
     "hash": "fb098251cda1eb3765397df87e2787b9"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/single-sign-on/facebook/facebook-sso.service.ts": {
-    "mtime": 1780485443.4615767,
+    "mtime": 1780649616.8891265,
     "hash": "b11b9bebc2605c90486f0af30c32cffc"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/single-sign-on/facebook/facebook-sso-button.component.ts": {
-    "mtime": 1777937262.9616082,
+    "mtime": 1780649616.8889968,
     "hash": "376c0e0eb2d5a8ce884cfd1cee7991e4"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/login/login.component.ts": {
-    "mtime": 1779973198.8494136,
+    "mtime": 1780649616.8887565,
     "hash": "429d36fe1db7bec29f7f3c1ef0031480"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/layout/layout.module.ts": {
-    "mtime": 1778426032.7279952,
+    "mtime": 1780649616.8928533,
     "hash": "ce91afaa0c22ffe5e1c6f291e0559f75"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/layout/layout.component.ts": {
-    "mtime": 1780389876.4139507,
+    "mtime": 1780649616.8927379,
     "hash": "d4136937223447ccc10f8891395a9326"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/layout/components/sidebar/sidebar.component.ts": {
-    "mtime": 1768023915.4829242,
+    "mtime": 1780649616.892353,
     "hash": "69ad596ffb760d7768ab2d37b77d2777"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/layout/components/footer/footer.component.ts": {
-    "mtime": 1768023915.482616,
+    "mtime": 1780649616.8915875,
     "hash": "3ea3b678658a1bf32fcb33e2bed282ba"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/layout/components/header/header.component.ts": {
-    "mtime": 1778322661.529438,
+    "mtime": 1780649616.892007,
     "hash": "a3e72b7f6f9e938ebbec5ba5b1d1df64"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/theme/theme-switcher.component.ts": {
-    "mtime": 1778421326.0299528,
+    "mtime": 1780649616.893455,
     "hash": "decab210ac921555c72688d3e24dbc09"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/i18n/language-switcher.component.ts": {
-    "mtime": 1778421318.5962481,
+    "mtime": 1780649616.891302,
     "hash": "e0ccceb78e49553198e00474ca62ff91"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/i18n/app-translation.service.ts": {
-    "mtime": 1767411285.1316671,
+    "mtime": 1780649616.8911598,
     "hash": "742ae8df49bcdb385e1b7635422b0443"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/environments/environment.ts": {
-    "mtime": 1768023915.468453,
-    "hash": "1b9f23775d9072a2c5e7344bd95867d1"
+    "mtime": 1780649616.897085,
+    "hash": "97f761388b3aa24b0cab4591aa6476cb"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/environments/environment.development.ts": {
-    "mtime": 1768023915.4683702,
-    "hash": "294a19aa864a5190b1760520f7b290b5"
+    "mtime": 1780649616.8956616,
+    "hash": "d1bc2e0e4fdd3d7a88ec47d80aa86756"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Application/DependencyInjection.cs": {
-    "mtime": 1779949913.2681108,
+    "mtime": 1780649616.8992872,
     "hash": "7d65264aed03e333029147ebcf1d772e"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Application/obj/Debug/net10.0/Phantomhive.Application.GlobalUsings.g.cs": {
@@ -144,91 +144,91 @@
     "hash": "98926837ba69930b8428d861944bcd0a"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Application/obj/Debug/net10.0/Phantomhive.Application.AssemblyInfo.cs": {
-    "mtime": 1780388173.8113623,
-    "hash": "b7fb47842f71042eec5b7af3ed5ed9d7"
+    "mtime": 1780666807.6834025,
+    "hash": "f1df7b9dbe2f82008012018bc0930eed"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Application/Auth/DTOs/SsoLoginRequest.cs": {
-    "mtime": 1779949701.0636206,
+    "mtime": 1780649616.898207,
     "hash": "bea57a295be280ecae375a52ba464daf"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Application/Auth/DTOs/AuthResponse.cs": {
-    "mtime": 1779949705.7424421,
+    "mtime": 1780649616.8979955,
     "hash": "0423d6a0684e4e6a22e58cb20df35b6a"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Application/Auth/DTOs/LoginRequest.cs": {
-    "mtime": 1779949695.7787676,
+    "mtime": 1780649616.8981004,
     "hash": "2032e58d457d3c3be45fc0995e757ec7"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Application/Auth/Services/IAuthService.cs": {
-    "mtime": 1779949710.2813852,
+    "mtime": 1780649616.898482,
     "hash": "c3feed14d9120e7b1bece9b0b300a115"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Application/Auth/Services/AuthService.cs": {
-    "mtime": 1779949715.4772868,
+    "mtime": 1780649616.898371,
     "hash": "3d6445337b0ffcf9b21a0c1f937307d2"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Application/Common/Interfaces/IApplicationDbContext.cs": {
-    "mtime": 1779949675.9923444,
+    "mtime": 1780649616.8987029,
     "hash": "28570fb31343d3b1da1e7a400d45f15d"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Application/Common/Interfaces/IGoogleDriveService.cs": {
-    "mtime": 1780388158.926215,
-    "hash": "7b4e39716f8a48bb810e62614447437b"
+    "mtime": 1780666788.07374,
+    "hash": "a340b2be7b695c8c240bac5b2e324063"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/WebApi/Program.cs": {
-    "mtime": 1779950225.153769,
+    "mtime": 1780649616.901909,
     "hash": "1502d1434df6d1a3dff5bfd8d44159d1"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/WebApi/obj/Debug/net10.0/Phantomhive.WebApi.MvcApplicationPartsAssemblyInfo.cs": {
-    "mtime": 1780388315.5031664,
+    "mtime": 1780657660.1691065,
     "hash": "bbddc63dfa9d9faa474fcaa2e2be30af"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/WebApi/obj/Debug/net10.0/Phantomhive.WebApi.AssemblyInfo.cs": {
-    "mtime": 1780388174.035849,
-    "hash": "848a9dbb547fd2bdd1d4c647dfb3571d"
+    "mtime": 1780670225.4901264,
+    "hash": "2afe7bdf99b76959b20cff995901fb6f"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/WebApi/obj/Debug/net10.0/Phantomhive.WebApi.GlobalUsings.g.cs": {
     "mtime": 1779950236.0604672,
     "hash": "3ca3ba71f186b61cb901145d168ce1fd"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/WebApi/Controllers/GoogleDriveController.cs": {
-    "mtime": 1780388285.2833219,
-    "hash": "bb8596261062cd9848437c13ddfad5b7"
+    "mtime": 1780666798.9703124,
+    "hash": "36516184f7ac79e9c0475f9b0ec06873"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/WebApi/Controllers/AuthController.cs": {
-    "mtime": 1779950204.4351413,
+    "mtime": 1780649616.9009771,
     "hash": "b876671d6ba3a55b67a6896cdd30f053"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Infrastructure/DependencyInjection.cs": {
-    "mtime": 1780388276.673956,
-    "hash": "6d65da7ab458131a60a84efef91a0881"
+    "mtime": 1780666173.8809338,
+    "hash": "ca851b3f4f69a489e92c7f59cbe24134"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Infrastructure/obj/Debug/net10.0/Phantomhive.Infrastructure.GlobalUsings.g.cs": {
     "mtime": 1779950236.0167506,
     "hash": "98926837ba69930b8428d861944bcd0a"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Infrastructure/obj/Debug/net10.0/Phantomhive.Infrastructure.AssemblyInfo.cs": {
-    "mtime": 1780388172.6028502,
-    "hash": "c7798b6e87fa3496178b73b0ae2ad1b6"
+    "mtime": 1780666808.1206267,
+    "hash": "3412593f893c6d92194ceb021421f93c"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Infrastructure/Persistence/ApplicationDbContext.cs": {
-    "mtime": 1779950078.1616728,
+    "mtime": 1780649616.9001882,
     "hash": "69dc8ff38abe1df3578e23c12a6f41fc"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Infrastructure/Services/GoogleDriveService.cs": {
-    "mtime": 1780388347.650424,
-    "hash": "72ae0f51657a8f7608890fa58147a6ac"
+    "mtime": 1780666794.5503821,
+    "hash": "a35c30b32d7fc2759abe47e564a71aac"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Domain/obj/Debug/net10.0/Phantomhive.Domain.GlobalUsings.g.cs": {
     "mtime": 1779950236.0073295,
     "hash": "98926837ba69930b8428d861944bcd0a"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Domain/obj/Debug/net10.0/Phantomhive.Domain.AssemblyInfo.cs": {
-    "mtime": 1780388173.4765358,
-    "hash": "5446054dc3d045c5e377ad40fc4aefb0"
+    "mtime": 1780666805.858211,
+    "hash": "3807fa945a3a681627145f10befeb0fb"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Domain/Entities/User.cs": {
-    "mtime": 1779949642.7307727,
+    "mtime": 1780649616.8995564,
     "hash": "47348719b0c05ba6fe1d7f40917dba78"
   },
   "/Users/victortan/Repos/phantomhive/README.md": {
@@ -236,39 +236,39 @@
     "hash": "e03a31c4688cc6da8d2e40ce66f4c1a8"
   },
   "/Users/victortan/Repos/phantomhive/GEMINI.md": {
-    "mtime": 1778432156.8101087,
+    "mtime": 1780669794.2459373,
     "hash": "457af7352bcd1390f318eba7fefaeafa"
   },
   "/Users/victortan/Repos/phantomhive/AGENTS.md": {
-    "mtime": 1778432156.8101087,
+    "mtime": 1780669794.2459373,
     "hash": "457af7352bcd1390f318eba7fefaeafa"
   },
   "/Users/victortan/Repos/phantomhive/CLAUDE.md": {
-    "mtime": 1778432156.8101087,
+    "mtime": 1780669794.2459373,
     "hash": "457af7352bcd1390f318eba7fefaeafa"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/index.html": {
-    "mtime": 1764930186.6541207,
+    "mtime": 1780649616.8972046,
     "hash": "1727107ada5688b8abd9ca9cec2a7ad3"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/features/gallery/gallery.component.html": {
-    "mtime": 1780388408.1106474,
-    "hash": "f9a5cd4ecc3b551d8c5f3c09437f8c3b"
+    "mtime": 1780666825.4439094,
+    "hash": "1416a5daf68337c66cc2e37131074dfc"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/auth/login/login.component.html": {
-    "mtime": 1779973193.56225,
+    "mtime": 1780649616.8884442,
     "hash": "296031eb229bac81ba4fede8da6c1439"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/layout/layout.component.html": {
-    "mtime": 1780389883.1116302,
+    "mtime": 1780649616.892469,
     "hash": "813823f7eca414d625f4d7a8063b871b"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/layout/components/sidebar/sidebar.component.html": {
-    "mtime": 1780388593.8995843,
+    "mtime": 1780649616.8921769,
     "hash": "4a27b5668890cb8328005bafb8ec4960"
   },
   "/Users/victortan/Repos/phantomhive/angular/src/app/#core/layout/components/header/header.component.html": {
-    "mtime": 1778322661.5284364,
+    "mtime": 1780649616.891763,
     "hash": "97f053c463e9f59f2cd6c02deec2a398"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Application/obj/Debug/net10.0/Phantomhive.Application.csproj.FileListAbsolute.txt": {
@@ -276,8 +276,8 @@
     "hash": "cd5eae04890d10b5745109f55d74378c"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/WebApi/obj/Debug/net10.0/Phantomhive.WebApi.csproj.FileListAbsolute.txt": {
-    "mtime": 1780388316.4316268,
-    "hash": "6fadc25db590d56538858b42b5605a2c"
+    "mtime": 1780491195.8911834,
+    "hash": "e26c9cb3ee3cd349c02977d5e8a18af4"
   },
   "/Users/victortan/Repos/phantomhive/backend/src/Infrastructure/obj/Debug/net10.0/Phantomhive.Infrastructure.csproj.FileListAbsolute.txt": {
     "mtime": 1779950239.15045,
@@ -287,8 +287,12 @@
     "mtime": 1779950238.5177321,
     "hash": "c89ac12ae88af619d017c804f86b6e18"
   },
+  "/Users/victortan/Repos/phantomhive/Clean-Architecture-1.png": {
+    "mtime": 1780704946.6464808,
+    "hash": "cbf3faf8ddb8aab66e6b46d109822635"
+  },
   "/Users/victortan/Repos/phantomhive/angular/public/XIII.png": {
-    "mtime": 1778322661.5241792,
+    "mtime": 1780649616.8850954,
     "hash": "87dcdf85e178c3f81d3f7ed4699151c8"
   }
 }
